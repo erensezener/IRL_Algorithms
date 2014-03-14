@@ -1,0 +1,10 @@
+drwxr-xr-x   2 backup   root        16384 Nov 21 03:20 .
+drwxr-xr-x   8 backup   root        16384 Nov 21 03:20 ..
+-rw-r--r--   1 backup   root        81808 Nov 21 03:20 arch8.dat-s
+-rw-r--r--   1 backup   root        60679 Nov 21 03:20 maxG11.dat-s
+-rw-r--r--   1 backup   root        16854 Nov 21 03:20 mcp250-1.dat-s
+-rw-r--r--   1 backup   root       232427 Nov 21 03:20 qap9.dat-s
+-rw-r--r--   1 backup   root        68352 Nov 21 03:20 qpG11.dat-s
+-rw-r--r--   1 backup   root       164321 Nov 21 03:20 ss30.dat-s
+-rw-r--r--   1 backup   root       206836 Nov 21 03:20 theta3.dat-s
+-rw-r--r--   1 backup   root       208801 Nov 21 03:20 truss8.dat-s

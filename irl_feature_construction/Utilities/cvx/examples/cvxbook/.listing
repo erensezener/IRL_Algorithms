@@ -1,0 +1,9 @@
+drwxr-xr-x   8 backup   root        16384 Nov 21 03:22 .
+drwxr-xr-x  13 backup   root        16384 Nov 21 03:23 ..
+drwxr-xr-x   3 backup   root        16384 Nov 21 03:22 Ch04_cvx_opt_probs
+drwxr-xr-x   3 backup   root        16384 Nov 21 03:22 Ch05_duality
+drwxr-xr-x   3 backup   root        16384 Nov 21 03:22 Ch06_approx_fitting
+drwxr-xr-x   3 backup   root        16384 Nov 21 03:22 Ch07_statistical_estim
+drwxr-xr-x   3 backup   root        16384 Nov 21 03:22 Ch08_geometric_probs
+drwxr-xr-x   3 backup   root        16384 Nov 21 03:22 Ch11_intpt_methods
+-rw-r--r--   1 backup   root          490 Nov 21 03:22 Contents.m

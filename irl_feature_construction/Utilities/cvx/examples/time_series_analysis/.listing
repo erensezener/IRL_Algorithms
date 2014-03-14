@@ -1,0 +1,6 @@
+drwxr-xr-x   3 backup   root        16384 Nov 21 03:23 .
+drwxr-xr-x  13 backup   root        16384 Nov 21 03:23 ..
+-rw-r--r--   1 backup   root          202 Nov 21 03:23 Contents.m
+drwxr-xr-x   2 backup   root        16384 Nov 21 03:23 html
+-rw-r--r--   1 backup   root         1180 Nov 21 03:23 l1_trend_filter_snp500.m
+-rw-r--r--   1 backup   root        13788 Nov 21 03:23 snp500.txt

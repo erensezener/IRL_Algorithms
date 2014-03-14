@@ -1,0 +1,8 @@
+drwxr-xr-x   2 backup   root        16384 Nov 21 03:22 .
+drwxr-xr-x   3 backup   root        16384 Nov 21 03:22 ..
+-rw-r--r--   1 backup   root         4330 Nov 21 03:22 max_entropy.html
+-rw-r--r--   1 backup   root         5750 Nov 21 03:22 sparse_covariance_est.html
+-rw-r--r--   1 backup   root         4517 Nov 21 03:22 sparse_covariance_est__01.png
+-rw-r--r--   1 backup   root        20798 Nov 21 03:22 sparse_covariance_est_tradeoff.html
+-rw-r--r--   1 backup   root         4217 Nov 21 03:22 sparse_covariance_est_tradeoff__01.png
+-rw-r--r--   1 backup   root         4292 Nov 21 03:22 weighted_analytic_center.html

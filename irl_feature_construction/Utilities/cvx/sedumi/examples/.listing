@@ -1,0 +1,8 @@
+drwxr-xr-x   2 backup   root        16384 Nov 21 03:21 .
+drwxr-xr-x   6 backup   root        16384 Nov 21 03:22 ..
+-rw-r--r--   1 backup   root         2107 Nov 21 03:21 Examples.txt
+-rw-r--r--   1 backup   root      1561968 Nov 21 03:21 OH_2Pi_STO-6GN9r12g1T2.mat
+-rw-r--r--   1 backup   root        70296 Nov 21 03:21 arch0.mat
+-rw-r--r--   1 backup   root      2575208 Nov 21 03:21 control07.mat
+-rw-r--r--   1 backup   root      2311176 Nov 21 03:21 nb.mat
+-rw-r--r--   1 backup   root        85072 Nov 21 03:21 trto3.mat

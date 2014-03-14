@@ -1,0 +1,17 @@
+drwxr-xr-x   3 backup   root        16384 Nov 21 03:22 .
+drwxr-xr-x  13 backup   root        16384 Nov 21 03:23 ..
+-rw-r--r--   1 backup   root         1408 Nov 21 03:22 Contents.m
+-rw-r--r--   1 backup   root         5232 Nov 21 03:22 LC_osc_design.m
+-rw-r--r--   1 backup   root         5650 Nov 21 03:22 clock_mesh.m
+-rw-r--r--   1 backup   root         5289 Nov 21 03:22 dig_ckt_sizing.m
+-rw-r--r--   1 backup   root         4421 Nov 21 03:22 elmore_straight_wire.m
+drwxr-xr-x   2 backup   root        16384 Nov 21 03:22 html
+-rw-r--r--   1 backup   root         4598 Nov 21 03:22 inverter_chain_sizing.m
+-rw-r--r--   1 backup   root         2124 Nov 21 03:22 plot_four_tapers.m
+-rw-r--r--   1 backup   root         3508 Nov 21 03:22 simple_NAND2_gate_design.m
+-rw-r--r--   1 backup   root          248 Nov 21 03:22 simple_step.m
+-rw-r--r--   1 backup   root         4725 Nov 21 03:22 tristate_bus_sizing.m
+-rw-r--r--   1 backup   root         6282 Nov 21 03:22 wire_driver_sizing.m
+-rw-r--r--   1 backup   root         4787 Nov 21 03:22 wire_sizing.m
+-rw-r--r--   1 backup   root         6032 Nov 21 03:22 wire_sizing_spacing.m
+-rw-r--r--   1 backup   root         4368 Nov 21 03:22 wire_sizing_topology.m

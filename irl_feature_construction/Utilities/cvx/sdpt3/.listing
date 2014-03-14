@@ -1,0 +1,14 @@
+drwxr-xr-x   8 backup   root        16384 Nov 21 03:20 .
+drwxr-xr-x  12 backup   root        16384 Nov 21 03:23 ..
+-rw-r--r--   1 backup   root         1135 Nov 21 03:20 Copyright
+drwxr-xr-x   2 backup   root        16384 Nov 21 03:20 Examples
+-rw-r--r--   1 backup   root        18351 Nov 21 03:20 GNU_General_Public_License_v2
+drwxr-xr-x   2 backup   root        16384 Nov 21 03:20 HSDSolver
+-rw-r--r--   1 backup   root         1050 Nov 21 03:20 Installmex.m
+drwxr-xr-x   2 backup   root        16384 Nov 21 03:20 Linsysolver
+-rw-r--r--   1 backup   root          889 Nov 21 03:20 README
+drwxr-xr-x   3 backup   root        16384 Nov 21 03:20 Solver
+drwxr-xr-x   2 backup   root        16384 Nov 21 03:20 dimacs
+drwxr-xr-x   2 backup   root        16384 Nov 21 03:20 sdplib
+-rw-r--r--   1 backup   root        12331 Nov 21 03:20 sdpt3.m
+-rw-r--r--   1 backup   root          941 Nov 21 03:20 startup.m

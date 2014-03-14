@@ -1,0 +1,17 @@
+drwxrwxr-x   2 backup   root        16384 Jan 19  2011 .
+drwxrwxr-x  10 backup   root        16384 Sep 12  2010 ..
+-rw-rw-r--   1 backup   root        12094 Sep 24  2010 Grid_5x5_z9.pomdp
+-rw-rw-r--   1 backup   root          473 Sep 20  2009 Maze_1d.pomdp
+-rw-r--r--   1 backup   root         5145 Jan 19  2011 Maze_4x3.pomdp
+-rw-r--r--   1 backup   root       115793 Sep 28  2010 RockSample_4_3.pomdp
+-rw-rw-r--   1 backup   root       263173 Sep 28  2010 RockSample_4_4.pomdp
+-rw-r--r--   1 backup   root        88876 Sep 30  2010 RockSample_4x3.pomdp
+-rw-r--r--   1 backup   root      1158646 Aug 19  2009 RockSample_5_5.pomdp
+-rw-r--r--   1 backup   root      4441664 Aug 19  2009 RockSample_5_7.pomdp
+-rw-rw-r--   1 backup   root         1077 Sep 23  2010 Tiger.pomdp
+-rw-rw-r--   1 backup   root         3567 Oct 27  2010 heaven-hell.pomdp
+-rw-r--r--   1 backup   root         3362 Sep 12  2010 heaven-hell2.pomdp
+-rw-r--r--   1 backup   root         3815 Sep 10  2010 heaven-hell3.pomdp
+-rw-r--r--   1 backup   root         3090 Sep 10  2010 heaven-hell4.pomdp
+-rw-r--r--   1 backup   root        11934 Jan 19  2011 milos-aaai97.pomdp
+-rw-r--r--   1 backup   root         9757 Jan 19  2011 milos-aaai97S.pomdp

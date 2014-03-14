@@ -1,0 +1,16 @@
+drwxr-xr-x   3 backup   root        16384 Nov 21 03:22 .
+drwxr-xr-x  13 backup   root        16384 Nov 21 03:23 ..
+-rw-r--r--   1 backup   root         1470 Nov 21 03:22 Contents.m
+-rw-r--r--   1 backup   root         4305 Nov 21 03:22 equalizer_design.m
+-rw-r--r--   1 backup   root         2516 Nov 21 03:22 fir_chebychev_design.m
+-rw-r--r--   1 backup   root         3150 Nov 21 03:22 fir_lin_phase_lowpass_max_atten.m
+-rw-r--r--   1 backup   root         3839 Nov 21 03:22 fir_lin_phase_lowpass_min_order.m
+-rw-r--r--   1 backup   root         2958 Nov 21 03:22 fir_lin_phase_lowpass_min_ripple.m
+-rw-r--r--   1 backup   root         4010 Nov 21 03:22 fir_lin_phase_lowpass_min_trans.m
+-rw-r--r--   1 backup   root         3830 Nov 21 03:22 fir_mag_design_lowpass_max_atten.m
+-rw-r--r--   1 backup   root         4290 Nov 21 03:22 fir_mag_design_lowpass_min_order.m
+drwxr-xr-x   2 backup   root        16384 Nov 21 03:22 html
+-rw-r--r--   1 backup   root         5405 Nov 21 03:22 iir_mag_design_bandpass_max_atten.m
+-rw-r--r--   1 backup   root         5049 Nov 21 03:22 iir_mag_design_lowpass_max_atten.m
+-rw-r--r--   1 backup   root         1969 Nov 21 03:22 one_over_f_filter.m
+-rw-r--r--   1 backup   root         1292 Nov 21 03:22 spectral_fact.m

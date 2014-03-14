@@ -1,0 +1,15 @@
+drwxr-xr-x   2 backup   root        16384 Nov 21 03:22 .
+drwxr-xr-x  13 backup   root        16384 Nov 21 03:23 ..
+-rw-r--r--   1 backup   root         7553 Nov 21 03:22 closest_toeplitz_psd.html
+-rw-r--r--   1 backup   root         6980 Nov 21 03:22 equality_constr_norm_min.html
+-rw-r--r--   1 backup   root         6194 Nov 21 03:22 min_phase_spectral_fact.html
+-rw-r--r--   1 backup   root         9713 Nov 21 03:22 nonneg_matrix_fact.html
+-rw-r--r--   1 backup   root         3190 Nov 21 03:22 nonneg_matrix_fact__01.png
+-rw-r--r--   1 backup   root        34696 Nov 21 03:22 quickstart.html
+-rw-r--r--   1 backup   root         6214 Nov 21 03:22 quickstart__01.png
+-rw-r--r--   1 backup   root         4891 Nov 21 03:22 regularized_norm_tradeoff.html
+-rw-r--r--   1 backup   root         3313 Nov 21 03:22 regularized_norm_tradeoff__01.png
+-rw-r--r--   1 backup   root         3665 Nov 21 03:22 regularized_norm_tradeoff__02.png
+-rw-r--r--   1 backup   root         3920 Nov 21 03:22 simple_LP.html
+-rw-r--r--   1 backup   root         3828 Nov 21 03:22 simple_LP2.html
+-rw-r--r--   1 backup   root         3551 Nov 21 03:22 simple_LS.html

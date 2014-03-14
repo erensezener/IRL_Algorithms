@@ -1,0 +1,16 @@
+drwxr-xr-x   2 backup   root        16384 Nov 21 03:19 .
+drwxr-xr-x  12 backup   root        16384 Nov 21 03:23 ..
+-rw-r--r--   1 backup   root          714 Nov 21 03:19 Contents.m
+-rw-r--r--   1 backup   root           27 Nov 21 03:19 In.m
+-rw-r--r--   1 backup   root         3635 Nov 21 03:19 dual.m
+-rw-r--r--   1 backup   root         1759 Nov 21 03:19 epigraph.m
+-rw-r--r--   1 backup   root         3036 Nov 21 03:19 expression.m
+-rw-r--r--   1 backup   root          937 Nov 21 03:19 expressions.m
+-rw-r--r--   1 backup   root         1817 Nov 21 03:19 hypograph.m
+-rw-r--r--   1 backup   root         1416 Nov 21 03:19 maximise.m
+-rw-r--r--   1 backup   root         1416 Nov 21 03:19 maximize.m
+-rw-r--r--   1 backup   root         1413 Nov 21 03:19 minimise.m
+-rw-r--r--   1 backup   root         1413 Nov 21 03:19 minimize.m
+-rw-r--r--   1 backup   root          918 Nov 21 03:19 subject.m
+-rw-r--r--   1 backup   root         5889 Nov 21 03:19 variable.m
+-rw-r--r--   1 backup   root         1015 Nov 21 03:19 variables.m

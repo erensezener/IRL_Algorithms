@@ -1,0 +1,3785 @@
+# This is the POMDP file for the non-epsodic Rock Sample [4,3] problem.
+# This is generated from the original Rock Sample [4,3] problem,
+# which is built by Trey Smith.
+# This is written by Jaedeug Choi.
+
+discount: 0.95
+values: reward
+
+states: s00000 s00001 s00010 s00011 s00100 s00101 s00110 s00111 s01000 s01001 s01010 s01011 s01100 s01101 s01110 s01111 s02000 s02001 s02010 s02011 s02100 s02101 s02110 s02111 s03000 s03001 s03010 s03011 s03100 s03101 s03110 s03111 s10000 s10001 s10010 s10011 s10100 s10101 s10110 s10111 s11000 s11001 s11010 s11011 s11100 s11101 s11110 s11111 s12000 s12001 s12010 s12011 s12100 s12101 s12110 s12111 s13000 s13001 s13010 s13011 s13100 s13101 s13110 s13111 s20000 s20001 s20010 s20011 s20100 s20101 s20110 s20111 s21000 s21001 s21010 s21011 s21100 s21101 s21110 s21111 s22000 s22001 s22010 s22011 s22100 s22101 s22110 s22111 s23000 s23001 s23010 s23011 s23100 s23101 s23110 s23111 s30000 s30001 s30010 s30011 s30100 s30101 s30110 s30111 s31000 s31001 s31010 s31011 s31100 s31101 s31110 s31111 s32000 s32001 s32010 s32011 s32100 s32101 s32110 s32111 s33000 s33001 s33010 s33011 s33100 s33101 s33110 s33111 st 
+
+actions: amn ame ams amw ac0 ac1 ac2 as 
+
+observations: ogood obad 
+
+start: 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+
+T: amn : s00000	: s01000	 1.0
+O: amn : s00000	: ogood  	 1.0
+
+T: ame : s00000	: s10000	 1.0
+O: ame : s00000	: ogood  	 1.0
+
+T: ams : s00000	: st	 1.0
+O: ams : s00000	: ogood  	 1.0
+R: ams : s00000	: *	 : *	 -100.0
+
+T: amw : s00000	: st	 1.0
+O: amw : s00000	: ogood  	 1.0
+R: amw : s00000	: *	 : *	 -100.0
+
+T: ac0 : s00000	: s00000	 1.0
+O: ac0 : s00000	: ogood  	 0.446561
+O: ac0 : s00000	: obad  	 0.553439
+
+T: ac1 : s00000	: s00000	 1.0
+O: ac1 : s00000	: ogood  	 0.478835
+O: ac1 : s00000	: obad  	 0.521165
+
+T: ac2 : s00000	: s00000	 1.0
+O: ac2 : s00000	: ogood  	 0.31606
+O: ac2 : s00000	: obad  	 0.68394
+
+T: as  : s00000	: st	 1.0
+O: as  : s00000	: ogood  	 1.0
+R: as  : s00000	: *	 : *	 -100.0
+
+T: amn : s00001	: s01001	 1.0
+O: amn : s00001	: ogood  	 1.0
+
+T: ame : s00001	: s10001	 1.0
+O: ame : s00001	: ogood  	 1.0
+
+T: ams : s00001	: st	 1.0
+O: ams : s00001	: ogood  	 1.0
+R: ams : s00001	: *	 : *	 -100.0
+
+T: amw : s00001	: st	 1.0
+O: amw : s00001	: ogood  	 1.0
+R: amw : s00001	: *	 : *	 -100.0
+
+T: ac0 : s00001	: s00001	 1.0
+O: ac0 : s00001	: ogood  	 0.446561
+O: ac0 : s00001	: obad  	 0.553439
+
+T: ac1 : s00001	: s00001	 1.0
+O: ac1 : s00001	: ogood  	 0.478835
+O: ac1 : s00001	: obad  	 0.521165
+
+T: ac2 : s00001	: s00001	 1.0
+O: ac2 : s00001	: ogood  	 0.68394
+O: ac2 : s00001	: obad  	 0.31606
+
+T: as  : s00001	: st	 1.0
+O: as  : s00001	: ogood  	 1.0
+R: as  : s00001	: *	 : *	 -100.0
+
+T: amn : s00010	: s01010	 1.0
+O: amn : s00010	: ogood  	 1.0
+
+T: ame : s00010	: s10010	 1.0
+O: ame : s00010	: ogood  	 1.0
+
+T: ams : s00010	: st	 1.0
+O: ams : s00010	: ogood  	 1.0
+R: ams : s00010	: *	 : *	 -100.0
+
+T: amw : s00010	: st	 1.0
+O: amw : s00010	: ogood  	 1.0
+R: amw : s00010	: *	 : *	 -100.0
+
+T: ac0 : s00010	: s00010	 1.0
+O: ac0 : s00010	: ogood  	 0.446561
+O: ac0 : s00010	: obad  	 0.553439
+
+T: ac1 : s00010	: s00010	 1.0
+O: ac1 : s00010	: ogood  	 0.521165
+O: ac1 : s00010	: obad  	 0.478835
+
+T: ac2 : s00010	: s00010	 1.0
+O: ac2 : s00010	: ogood  	 0.31606
+O: ac2 : s00010	: obad  	 0.68394
+
+T: as  : s00010	: st	 1.0
+O: as  : s00010	: ogood  	 1.0
+R: as  : s00010	: *	 : *	 -100.0
+
+T: amn : s00011	: s01011	 1.0
+O: amn : s00011	: ogood  	 1.0
+
+T: ame : s00011	: s10011	 1.0
+O: ame : s00011	: ogood  	 1.0
+
+T: ams : s00011	: st	 1.0
+O: ams : s00011	: ogood  	 1.0
+R: ams : s00011	: *	 : *	 -100.0
+
+T: amw : s00011	: st	 1.0
+O: amw : s00011	: ogood  	 1.0
+R: amw : s00011	: *	 : *	 -100.0
+
+T: ac0 : s00011	: s00011	 1.0
+O: ac0 : s00011	: ogood  	 0.446561
+O: ac0 : s00011	: obad  	 0.553439
+
+T: ac1 : s00011	: s00011	 1.0
+O: ac1 : s00011	: ogood  	 0.521165
+O: ac1 : s00011	: obad  	 0.478835
+
+T: ac2 : s00011	: s00011	 1.0
+O: ac2 : s00011	: ogood  	 0.68394
+O: ac2 : s00011	: obad  	 0.31606
+
+T: as  : s00011	: st	 1.0
+O: as  : s00011	: ogood  	 1.0
+R: as  : s00011	: *	 : *	 -100.0
+
+T: amn : s00100	: s01100	 1.0
+O: amn : s00100	: ogood  	 1.0
+
+T: ame : s00100	: s10100	 1.0
+O: ame : s00100	: ogood  	 1.0
+
+T: ams : s00100	: st	 1.0
+O: ams : s00100	: ogood  	 1.0
+R: ams : s00100	: *	 : *	 -100.0
+
+T: amw : s00100	: st	 1.0
+O: amw : s00100	: ogood  	 1.0
+R: amw : s00100	: *	 : *	 -100.0
+
+T: ac0 : s00100	: s00100	 1.0
+O: ac0 : s00100	: ogood  	 0.553439
+O: ac0 : s00100	: obad  	 0.446561
+
+T: ac1 : s00100	: s00100	 1.0
+O: ac1 : s00100	: ogood  	 0.478835
+O: ac1 : s00100	: obad  	 0.521165
+
+T: ac2 : s00100	: s00100	 1.0
+O: ac2 : s00100	: ogood  	 0.31606
+O: ac2 : s00100	: obad  	 0.68394
+
+T: as  : s00100	: st	 1.0
+O: as  : s00100	: ogood  	 1.0
+R: as  : s00100	: *	 : *	 -100.0
+
+T: amn : s00101	: s01101	 1.0
+O: amn : s00101	: ogood  	 1.0
+
+T: ame : s00101	: s10101	 1.0
+O: ame : s00101	: ogood  	 1.0
+
+T: ams : s00101	: st	 1.0
+O: ams : s00101	: ogood  	 1.0
+R: ams : s00101	: *	 : *	 -100.0
+
+T: amw : s00101	: st	 1.0
+O: amw : s00101	: ogood  	 1.0
+R: amw : s00101	: *	 : *	 -100.0
+
+T: ac0 : s00101	: s00101	 1.0
+O: ac0 : s00101	: ogood  	 0.553439
+O: ac0 : s00101	: obad  	 0.446561
+
+T: ac1 : s00101	: s00101	 1.0
+O: ac1 : s00101	: ogood  	 0.478835
+O: ac1 : s00101	: obad  	 0.521165
+
+T: ac2 : s00101	: s00101	 1.0
+O: ac2 : s00101	: ogood  	 0.68394
+O: ac2 : s00101	: obad  	 0.31606
+
+T: as  : s00101	: st	 1.0
+O: as  : s00101	: ogood  	 1.0
+R: as  : s00101	: *	 : *	 -100.0
+
+T: amn : s00110	: s01110	 1.0
+O: amn : s00110	: ogood  	 1.0
+
+T: ame : s00110	: s10110	 1.0
+O: ame : s00110	: ogood  	 1.0
+
+T: ams : s00110	: st	 1.0
+O: ams : s00110	: ogood  	 1.0
+R: ams : s00110	: *	 : *	 -100.0
+
+T: amw : s00110	: st	 1.0
+O: amw : s00110	: ogood  	 1.0
+R: amw : s00110	: *	 : *	 -100.0
+
+T: ac0 : s00110	: s00110	 1.0
+O: ac0 : s00110	: ogood  	 0.553439
+O: ac0 : s00110	: obad  	 0.446561
+
+T: ac1 : s00110	: s00110	 1.0
+O: ac1 : s00110	: ogood  	 0.521165
+O: ac1 : s00110	: obad  	 0.478835
+
+T: ac2 : s00110	: s00110	 1.0
+O: ac2 : s00110	: ogood  	 0.31606
+O: ac2 : s00110	: obad  	 0.68394
+
+T: as  : s00110	: st	 1.0
+O: as  : s00110	: ogood  	 1.0
+R: as  : s00110	: *	 : *	 -100.0
+
+T: amn : s00111	: s01111	 1.0
+O: amn : s00111	: ogood  	 1.0
+
+T: ame : s00111	: s10111	 1.0
+O: ame : s00111	: ogood  	 1.0
+
+T: ams : s00111	: st	 1.0
+O: ams : s00111	: ogood  	 1.0
+R: ams : s00111	: *	 : *	 -100.0
+
+T: amw : s00111	: st	 1.0
+O: amw : s00111	: ogood  	 1.0
+R: amw : s00111	: *	 : *	 -100.0
+
+T: ac0 : s00111	: s00111	 1.0
+O: ac0 : s00111	: ogood  	 0.553439
+O: ac0 : s00111	: obad  	 0.446561
+
+T: ac1 : s00111	: s00111	 1.0
+O: ac1 : s00111	: ogood  	 0.521165
+O: ac1 : s00111	: obad  	 0.478835
+
+T: ac2 : s00111	: s00111	 1.0
+O: ac2 : s00111	: ogood  	 0.68394
+O: ac2 : s00111	: obad  	 0.31606
+
+T: as  : s00111	: st	 1.0
+O: as  : s00111	: ogood  	 1.0
+R: as  : s00111	: *	 : *	 -100.0
+
+T: amn : s01000	: s02000	 1.0
+O: amn : s01000	: ogood  	 1.0
+
+T: ame : s01000	: s11000	 1.0
+O: ame : s01000	: ogood  	 1.0
+
+T: ams : s01000	: s00000	 1.0
+O: ams : s01000	: ogood  	 1.0
+
+T: amw : s01000	: st	 1.0
+O: amw : s01000	: ogood  	 1.0
+R: amw : s01000	: *	 : *	 -100.0
+
+T: ac0 : s01000	: s01000	 1.0
+O: ac0 : s01000	: ogood  	 0.432332
+O: ac0 : s01000	: obad  	 0.567668
+
+T: ac1 : s01000	: s01000	 1.0
+O: ac1 : s01000	: ogood  	 0.446561
+O: ac1 : s01000	: obad  	 0.553439
+
+T: ac2 : s01000	: s01000	 1.0
+O: ac2 : s01000	: ogood  	 0.378442
+O: ac2 : s01000	: obad  	 0.621558
+
+T: as  : s01000	: st	 1.0
+O: as  : s01000	: ogood  	 1.0
+R: as  : s01000	: *	 : *	 -100.0
+
+T: amn : s01001	: s02001	 1.0
+O: amn : s01001	: ogood  	 1.0
+
+T: ame : s01001	: s11001	 1.0
+O: ame : s01001	: ogood  	 1.0
+
+T: ams : s01001	: s00001	 1.0
+O: ams : s01001	: ogood  	 1.0
+
+T: amw : s01001	: st	 1.0
+O: amw : s01001	: ogood  	 1.0
+R: amw : s01001	: *	 : *	 -100.0
+
+T: ac0 : s01001	: s01001	 1.0
+O: ac0 : s01001	: ogood  	 0.432332
+O: ac0 : s01001	: obad  	 0.567668
+
+T: ac1 : s01001	: s01001	 1.0
+O: ac1 : s01001	: ogood  	 0.446561
+O: ac1 : s01001	: obad  	 0.553439
+
+T: ac2 : s01001	: s01001	 1.0
+O: ac2 : s01001	: ogood  	 0.621558
+O: ac2 : s01001	: obad  	 0.378442
+
+T: as  : s01001	: st	 1.0
+O: as  : s01001	: ogood  	 1.0
+R: as  : s01001	: *	 : *	 -100.0
+
+T: amn : s01010	: s02010	 1.0
+O: amn : s01010	: ogood  	 1.0
+
+T: ame : s01010	: s11010	 1.0
+O: ame : s01010	: ogood  	 1.0
+
+T: ams : s01010	: s00010	 1.0
+O: ams : s01010	: ogood  	 1.0
+
+T: amw : s01010	: st	 1.0
+O: amw : s01010	: ogood  	 1.0
+R: amw : s01010	: *	 : *	 -100.0
+
+T: ac0 : s01010	: s01010	 1.0
+O: ac0 : s01010	: ogood  	 0.432332
+O: ac0 : s01010	: obad  	 0.567668
+
+T: ac1 : s01010	: s01010	 1.0
+O: ac1 : s01010	: ogood  	 0.553439
+O: ac1 : s01010	: obad  	 0.446561
+
+T: ac2 : s01010	: s01010	 1.0
+O: ac2 : s01010	: ogood  	 0.378442
+O: ac2 : s01010	: obad  	 0.621558
+
+T: as  : s01010	: st	 1.0
+O: as  : s01010	: ogood  	 1.0
+R: as  : s01010	: *	 : *	 -100.0
+
+T: amn : s01011	: s02011	 1.0
+O: amn : s01011	: ogood  	 1.0
+
+T: ame : s01011	: s11011	 1.0
+O: ame : s01011	: ogood  	 1.0
+
+T: ams : s01011	: s00011	 1.0
+O: ams : s01011	: ogood  	 1.0
+
+T: amw : s01011	: st	 1.0
+O: amw : s01011	: ogood  	 1.0
+R: amw : s01011	: *	 : *	 -100.0
+
+T: ac0 : s01011	: s01011	 1.0
+O: ac0 : s01011	: ogood  	 0.432332
+O: ac0 : s01011	: obad  	 0.567668
+
+T: ac1 : s01011	: s01011	 1.0
+O: ac1 : s01011	: ogood  	 0.553439
+O: ac1 : s01011	: obad  	 0.446561
+
+T: ac2 : s01011	: s01011	 1.0
+O: ac2 : s01011	: ogood  	 0.621558
+O: ac2 : s01011	: obad  	 0.378442
+
+T: as  : s01011	: st	 1.0
+O: as  : s01011	: ogood  	 1.0
+R: as  : s01011	: *	 : *	 -100.0
+
+T: amn : s01100	: s02100	 1.0
+O: amn : s01100	: ogood  	 1.0
+
+T: ame : s01100	: s11100	 1.0
+O: ame : s01100	: ogood  	 1.0
+
+T: ams : s01100	: s00100	 1.0
+O: ams : s01100	: ogood  	 1.0
+
+T: amw : s01100	: st	 1.0
+O: amw : s01100	: ogood  	 1.0
+R: amw : s01100	: *	 : *	 -100.0
+
+T: ac0 : s01100	: s01100	 1.0
+O: ac0 : s01100	: ogood  	 0.567668
+O: ac0 : s01100	: obad  	 0.432332
+
+T: ac1 : s01100	: s01100	 1.0
+O: ac1 : s01100	: ogood  	 0.446561
+O: ac1 : s01100	: obad  	 0.553439
+
+T: ac2 : s01100	: s01100	 1.0
+O: ac2 : s01100	: ogood  	 0.378442
+O: ac2 : s01100	: obad  	 0.621558
+
+T: as  : s01100	: st	 1.0
+O: as  : s01100	: ogood  	 1.0
+R: as  : s01100	: *	 : *	 -100.0
+
+T: amn : s01101	: s02101	 1.0
+O: amn : s01101	: ogood  	 1.0
+
+T: ame : s01101	: s11101	 1.0
+O: ame : s01101	: ogood  	 1.0
+
+T: ams : s01101	: s00101	 1.0
+O: ams : s01101	: ogood  	 1.0
+
+T: amw : s01101	: st	 1.0
+O: amw : s01101	: ogood  	 1.0
+R: amw : s01101	: *	 : *	 -100.0
+
+T: ac0 : s01101	: s01101	 1.0
+O: ac0 : s01101	: ogood  	 0.567668
+O: ac0 : s01101	: obad  	 0.432332
+
+T: ac1 : s01101	: s01101	 1.0
+O: ac1 : s01101	: ogood  	 0.446561
+O: ac1 : s01101	: obad  	 0.553439
+
+T: ac2 : s01101	: s01101	 1.0
+O: ac2 : s01101	: ogood  	 0.621558
+O: ac2 : s01101	: obad  	 0.378442
+
+T: as  : s01101	: st	 1.0
+O: as  : s01101	: ogood  	 1.0
+R: as  : s01101	: *	 : *	 -100.0
+
+T: amn : s01110	: s02110	 1.0
+O: amn : s01110	: ogood  	 1.0
+
+T: ame : s01110	: s11110	 1.0
+O: ame : s01110	: ogood  	 1.0
+
+T: ams : s01110	: s00110	 1.0
+O: ams : s01110	: ogood  	 1.0
+
+T: amw : s01110	: st	 1.0
+O: amw : s01110	: ogood  	 1.0
+R: amw : s01110	: *	 : *	 -100.0
+
+T: ac0 : s01110	: s01110	 1.0
+O: ac0 : s01110	: ogood  	 0.567668
+O: ac0 : s01110	: obad  	 0.432332
+
+T: ac1 : s01110	: s01110	 1.0
+O: ac1 : s01110	: ogood  	 0.553439
+O: ac1 : s01110	: obad  	 0.446561
+
+T: ac2 : s01110	: s01110	 1.0
+O: ac2 : s01110	: ogood  	 0.378442
+O: ac2 : s01110	: obad  	 0.621558
+
+T: as  : s01110	: st	 1.0
+O: as  : s01110	: ogood  	 1.0
+R: as  : s01110	: *	 : *	 -100.0
+
+T: amn : s01111	: s02111	 1.0
+O: amn : s01111	: ogood  	 1.0
+
+T: ame : s01111	: s11111	 1.0
+O: ame : s01111	: ogood  	 1.0
+
+T: ams : s01111	: s00111	 1.0
+O: ams : s01111	: ogood  	 1.0
+
+T: amw : s01111	: st	 1.0
+O: amw : s01111	: ogood  	 1.0
+R: amw : s01111	: *	 : *	 -100.0
+
+T: ac0 : s01111	: s01111	 1.0
+O: ac0 : s01111	: ogood  	 0.567668
+O: ac0 : s01111	: obad  	 0.432332
+
+T: ac1 : s01111	: s01111	 1.0
+O: ac1 : s01111	: ogood  	 0.553439
+O: ac1 : s01111	: obad  	 0.446561
+
+T: ac2 : s01111	: s01111	 1.0
+O: ac2 : s01111	: ogood  	 0.621558
+O: ac2 : s01111	: obad  	 0.378442
+
+T: as  : s01111	: st	 1.0
+O: as  : s01111	: ogood  	 1.0
+R: as  : s01111	: *	 : *	 -100.0
+
+T: amn : s02000	: s03000	 1.0
+O: amn : s02000	: ogood  	 1.0
+
+T: ame : s02000	: s12000	 1.0
+O: ame : s02000	: ogood  	 1.0
+
+T: ams : s02000	: s01000	 1.0
+O: ams : s02000	: ogood  	 1.0
+
+T: amw : s02000	: st	 1.0
+O: amw : s02000	: ogood  	 1.0
+R: amw : s02000	: *	 : *	 -100.0
+
+T: ac0 : s02000	: s02000	 1.0
+O: ac0 : s02000	: ogood  	 0.446561
+O: ac0 : s02000	: obad  	 0.553439
+
+T: ac1 : s02000	: s02000	 1.0
+O: ac1 : s02000	: ogood  	 0.378442
+O: ac1 : s02000	: obad  	 0.621558
+
+T: ac2 : s02000	: s02000	 1.0
+O: ac2 : s02000	: ogood  	 0.446561
+O: ac2 : s02000	: obad  	 0.553439
+
+T: as  : s02000	: st	 1.0
+O: as  : s02000	: ogood  	 1.0
+R: as  : s02000	: *	 : *	 -100.0
+
+T: amn : s02001	: s03001	 1.0
+O: amn : s02001	: ogood  	 1.0
+
+T: ame : s02001	: s12001	 1.0
+O: ame : s02001	: ogood  	 1.0
+
+T: ams : s02001	: s01001	 1.0
+O: ams : s02001	: ogood  	 1.0
+
+T: amw : s02001	: st	 1.0
+O: amw : s02001	: ogood  	 1.0
+R: amw : s02001	: *	 : *	 -100.0
+
+T: ac0 : s02001	: s02001	 1.0
+O: ac0 : s02001	: ogood  	 0.446561
+O: ac0 : s02001	: obad  	 0.553439
+
+T: ac1 : s02001	: s02001	 1.0
+O: ac1 : s02001	: ogood  	 0.378442
+O: ac1 : s02001	: obad  	 0.621558
+
+T: ac2 : s02001	: s02001	 1.0
+O: ac2 : s02001	: ogood  	 0.553439
+O: ac2 : s02001	: obad  	 0.446561
+
+T: as  : s02001	: st	 1.0
+O: as  : s02001	: ogood  	 1.0
+R: as  : s02001	: *	 : *	 -100.0
+
+T: amn : s02010	: s03010	 1.0
+O: amn : s02010	: ogood  	 1.0
+
+T: ame : s02010	: s12010	 1.0
+O: ame : s02010	: ogood  	 1.0
+
+T: ams : s02010	: s01010	 1.0
+O: ams : s02010	: ogood  	 1.0
+
+T: amw : s02010	: st	 1.0
+O: amw : s02010	: ogood  	 1.0
+R: amw : s02010	: *	 : *	 -100.0
+
+T: ac0 : s02010	: s02010	 1.0
+O: ac0 : s02010	: ogood  	 0.446561
+O: ac0 : s02010	: obad  	 0.553439
+
+T: ac1 : s02010	: s02010	 1.0
+O: ac1 : s02010	: ogood  	 0.621558
+O: ac1 : s02010	: obad  	 0.378442
+
+T: ac2 : s02010	: s02010	 1.0
+O: ac2 : s02010	: ogood  	 0.446561
+O: ac2 : s02010	: obad  	 0.553439
+
+T: as  : s02010	: st	 1.0
+O: as  : s02010	: ogood  	 1.0
+R: as  : s02010	: *	 : *	 -100.0
+
+T: amn : s02011	: s03011	 1.0
+O: amn : s02011	: ogood  	 1.0
+
+T: ame : s02011	: s12011	 1.0
+O: ame : s02011	: ogood  	 1.0
+
+T: ams : s02011	: s01011	 1.0
+O: ams : s02011	: ogood  	 1.0
+
+T: amw : s02011	: st	 1.0
+O: amw : s02011	: ogood  	 1.0
+R: amw : s02011	: *	 : *	 -100.0
+
+T: ac0 : s02011	: s02011	 1.0
+O: ac0 : s02011	: ogood  	 0.446561
+O: ac0 : s02011	: obad  	 0.553439
+
+T: ac1 : s02011	: s02011	 1.0
+O: ac1 : s02011	: ogood  	 0.621558
+O: ac1 : s02011	: obad  	 0.378442
+
+T: ac2 : s02011	: s02011	 1.0
+O: ac2 : s02011	: ogood  	 0.553439
+O: ac2 : s02011	: obad  	 0.446561
+
+T: as  : s02011	: st	 1.0
+O: as  : s02011	: ogood  	 1.0
+R: as  : s02011	: *	 : *	 -100.0
+
+T: amn : s02100	: s03100	 1.0
+O: amn : s02100	: ogood  	 1.0
+
+T: ame : s02100	: s12100	 1.0
+O: ame : s02100	: ogood  	 1.0
+
+T: ams : s02100	: s01100	 1.0
+O: ams : s02100	: ogood  	 1.0
+
+T: amw : s02100	: st	 1.0
+O: amw : s02100	: ogood  	 1.0
+R: amw : s02100	: *	 : *	 -100.0
+
+T: ac0 : s02100	: s02100	 1.0
+O: ac0 : s02100	: ogood  	 0.553439
+O: ac0 : s02100	: obad  	 0.446561
+
+T: ac1 : s02100	: s02100	 1.0
+O: ac1 : s02100	: ogood  	 0.378442
+O: ac1 : s02100	: obad  	 0.621558
+
+T: ac2 : s02100	: s02100	 1.0
+O: ac2 : s02100	: ogood  	 0.446561
+O: ac2 : s02100	: obad  	 0.553439
+
+T: as  : s02100	: st	 1.0
+O: as  : s02100	: ogood  	 1.0
+R: as  : s02100	: *	 : *	 -100.0
+
+T: amn : s02101	: s03101	 1.0
+O: amn : s02101	: ogood  	 1.0
+
+T: ame : s02101	: s12101	 1.0
+O: ame : s02101	: ogood  	 1.0
+
+T: ams : s02101	: s01101	 1.0
+O: ams : s02101	: ogood  	 1.0
+
+T: amw : s02101	: st	 1.0
+O: amw : s02101	: ogood  	 1.0
+R: amw : s02101	: *	 : *	 -100.0
+
+T: ac0 : s02101	: s02101	 1.0
+O: ac0 : s02101	: ogood  	 0.553439
+O: ac0 : s02101	: obad  	 0.446561
+
+T: ac1 : s02101	: s02101	 1.0
+O: ac1 : s02101	: ogood  	 0.378442
+O: ac1 : s02101	: obad  	 0.621558
+
+T: ac2 : s02101	: s02101	 1.0
+O: ac2 : s02101	: ogood  	 0.553439
+O: ac2 : s02101	: obad  	 0.446561
+
+T: as  : s02101	: st	 1.0
+O: as  : s02101	: ogood  	 1.0
+R: as  : s02101	: *	 : *	 -100.0
+
+T: amn : s02110	: s03110	 1.0
+O: amn : s02110	: ogood  	 1.0
+
+T: ame : s02110	: s12110	 1.0
+O: ame : s02110	: ogood  	 1.0
+
+T: ams : s02110	: s01110	 1.0
+O: ams : s02110	: ogood  	 1.0
+
+T: amw : s02110	: st	 1.0
+O: amw : s02110	: ogood  	 1.0
+R: amw : s02110	: *	 : *	 -100.0
+
+T: ac0 : s02110	: s02110	 1.0
+O: ac0 : s02110	: ogood  	 0.553439
+O: ac0 : s02110	: obad  	 0.446561
+
+T: ac1 : s02110	: s02110	 1.0
+O: ac1 : s02110	: ogood  	 0.621558
+O: ac1 : s02110	: obad  	 0.378442
+
+T: ac2 : s02110	: s02110	 1.0
+O: ac2 : s02110	: ogood  	 0.446561
+O: ac2 : s02110	: obad  	 0.553439
+
+T: as  : s02110	: st	 1.0
+O: as  : s02110	: ogood  	 1.0
+R: as  : s02110	: *	 : *	 -100.0
+
+T: amn : s02111	: s03111	 1.0
+O: amn : s02111	: ogood  	 1.0
+
+T: ame : s02111	: s12111	 1.0
+O: ame : s02111	: ogood  	 1.0
+
+T: ams : s02111	: s01111	 1.0
+O: ams : s02111	: ogood  	 1.0
+
+T: amw : s02111	: st	 1.0
+O: amw : s02111	: ogood  	 1.0
+R: amw : s02111	: *	 : *	 -100.0
+
+T: ac0 : s02111	: s02111	 1.0
+O: ac0 : s02111	: ogood  	 0.553439
+O: ac0 : s02111	: obad  	 0.446561
+
+T: ac1 : s02111	: s02111	 1.0
+O: ac1 : s02111	: ogood  	 0.621558
+O: ac1 : s02111	: obad  	 0.378442
+
+T: ac2 : s02111	: s02111	 1.0
+O: ac2 : s02111	: ogood  	 0.553439
+O: ac2 : s02111	: obad  	 0.446561
+
+T: as  : s02111	: st	 1.0
+O: as  : s02111	: ogood  	 1.0
+R: as  : s02111	: *	 : *	 -100.0
+
+T: amn : s03000	: st	 1.0
+O: amn : s03000	: ogood  	 1.0
+R: amn : s03000	: *	 : *	 -100.0
+
+T: ame : s03000	: s13000	 1.0
+O: ame : s03000	: ogood  	 1.0
+
+T: ams : s03000	: s02000	 1.0
+O: ams : s03000	: ogood  	 1.0
+
+T: amw : s03000	: st	 1.0
+O: amw : s03000	: ogood  	 1.0
+R: amw : s03000	: *	 : *	 -100.0
+
+T: ac0 : s03000	: s03000	 1.0
+O: ac0 : s03000	: ogood  	 0.470447
+O: ac0 : s03000	: obad  	 0.529553
+
+T: ac1 : s03000	: s03000	 1.0
+O: ac1 : s03000	: ogood  	 0.31606
+O: ac1 : s03000	: obad  	 0.68394
+
+T: ac2 : s03000	: s03000	 1.0
+O: ac2 : s03000	: ogood  	 0.478835
+O: ac2 : s03000	: obad  	 0.521165
+
+T: as  : s03000	: st	 1.0
+O: as  : s03000	: ogood  	 1.0
+R: as  : s03000	: *	 : *	 -100.0
+
+T: amn : s03001	: st	 1.0
+O: amn : s03001	: ogood  	 1.0
+R: amn : s03001	: *	 : *	 -100.0
+
+T: ame : s03001	: s13001	 1.0
+O: ame : s03001	: ogood  	 1.0
+
+T: ams : s03001	: s02001	 1.0
+O: ams : s03001	: ogood  	 1.0
+
+T: amw : s03001	: st	 1.0
+O: amw : s03001	: ogood  	 1.0
+R: amw : s03001	: *	 : *	 -100.0
+
+T: ac0 : s03001	: s03001	 1.0
+O: ac0 : s03001	: ogood  	 0.470447
+O: ac0 : s03001	: obad  	 0.529553
+
+T: ac1 : s03001	: s03001	 1.0
+O: ac1 : s03001	: ogood  	 0.31606
+O: ac1 : s03001	: obad  	 0.68394
+
+T: ac2 : s03001	: s03001	 1.0
+O: ac2 : s03001	: ogood  	 0.521165
+O: ac2 : s03001	: obad  	 0.478835
+
+T: as  : s03001	: st	 1.0
+O: as  : s03001	: ogood  	 1.0
+R: as  : s03001	: *	 : *	 -100.0
+
+T: amn : s03010	: st	 1.0
+O: amn : s03010	: ogood  	 1.0
+R: amn : s03010	: *	 : *	 -100.0
+
+T: ame : s03010	: s13010	 1.0
+O: ame : s03010	: ogood  	 1.0
+
+T: ams : s03010	: s02010	 1.0
+O: ams : s03010	: ogood  	 1.0
+
+T: amw : s03010	: st	 1.0
+O: amw : s03010	: ogood  	 1.0
+R: amw : s03010	: *	 : *	 -100.0
+
+T: ac0 : s03010	: s03010	 1.0
+O: ac0 : s03010	: ogood  	 0.470447
+O: ac0 : s03010	: obad  	 0.529553
+
+T: ac1 : s03010	: s03010	 1.0
+O: ac1 : s03010	: ogood  	 0.68394
+O: ac1 : s03010	: obad  	 0.31606
+
+T: ac2 : s03010	: s03010	 1.0
+O: ac2 : s03010	: ogood  	 0.478835
+O: ac2 : s03010	: obad  	 0.521165
+
+T: as  : s03010	: st	 1.0
+O: as  : s03010	: ogood  	 1.0
+R: as  : s03010	: *	 : *	 -100.0
+
+T: amn : s03011	: st	 1.0
+O: amn : s03011	: ogood  	 1.0
+R: amn : s03011	: *	 : *	 -100.0
+
+T: ame : s03011	: s13011	 1.0
+O: ame : s03011	: ogood  	 1.0
+
+T: ams : s03011	: s02011	 1.0
+O: ams : s03011	: ogood  	 1.0
+
+T: amw : s03011	: st	 1.0
+O: amw : s03011	: ogood  	 1.0
+R: amw : s03011	: *	 : *	 -100.0
+
+T: ac0 : s03011	: s03011	 1.0
+O: ac0 : s03011	: ogood  	 0.470447
+O: ac0 : s03011	: obad  	 0.529553
+
+T: ac1 : s03011	: s03011	 1.0
+O: ac1 : s03011	: ogood  	 0.68394
+O: ac1 : s03011	: obad  	 0.31606
+
+T: ac2 : s03011	: s03011	 1.0
+O: ac2 : s03011	: ogood  	 0.521165
+O: ac2 : s03011	: obad  	 0.478835
+
+T: as  : s03011	: st	 1.0
+O: as  : s03011	: ogood  	 1.0
+R: as  : s03011	: *	 : *	 -100.0
+
+T: amn : s03100	: st	 1.0
+O: amn : s03100	: ogood  	 1.0
+R: amn : s03100	: *	 : *	 -100.0
+
+T: ame : s03100	: s13100	 1.0
+O: ame : s03100	: ogood  	 1.0
+
+T: ams : s03100	: s02100	 1.0
+O: ams : s03100	: ogood  	 1.0
+
+T: amw : s03100	: st	 1.0
+O: amw : s03100	: ogood  	 1.0
+R: amw : s03100	: *	 : *	 -100.0
+
+T: ac0 : s03100	: s03100	 1.0
+O: ac0 : s03100	: ogood  	 0.529553
+O: ac0 : s03100	: obad  	 0.470447
+
+T: ac1 : s03100	: s03100	 1.0
+O: ac1 : s03100	: ogood  	 0.31606
+O: ac1 : s03100	: obad  	 0.68394
+
+T: ac2 : s03100	: s03100	 1.0
+O: ac2 : s03100	: ogood  	 0.478835
+O: ac2 : s03100	: obad  	 0.521165
+
+T: as  : s03100	: st	 1.0
+O: as  : s03100	: ogood  	 1.0
+R: as  : s03100	: *	 : *	 -100.0
+
+T: amn : s03101	: st	 1.0
+O: amn : s03101	: ogood  	 1.0
+R: amn : s03101	: *	 : *	 -100.0
+
+T: ame : s03101	: s13101	 1.0
+O: ame : s03101	: ogood  	 1.0
+
+T: ams : s03101	: s02101	 1.0
+O: ams : s03101	: ogood  	 1.0
+
+T: amw : s03101	: st	 1.0
+O: amw : s03101	: ogood  	 1.0
+R: amw : s03101	: *	 : *	 -100.0
+
+T: ac0 : s03101	: s03101	 1.0
+O: ac0 : s03101	: ogood  	 0.529553
+O: ac0 : s03101	: obad  	 0.470447
+
+T: ac1 : s03101	: s03101	 1.0
+O: ac1 : s03101	: ogood  	 0.31606
+O: ac1 : s03101	: obad  	 0.68394
+
+T: ac2 : s03101	: s03101	 1.0
+O: ac2 : s03101	: ogood  	 0.521165
+O: ac2 : s03101	: obad  	 0.478835
+
+T: as  : s03101	: st	 1.0
+O: as  : s03101	: ogood  	 1.0
+R: as  : s03101	: *	 : *	 -100.0
+
+T: amn : s03110	: st	 1.0
+O: amn : s03110	: ogood  	 1.0
+R: amn : s03110	: *	 : *	 -100.0
+
+T: ame : s03110	: s13110	 1.0
+O: ame : s03110	: ogood  	 1.0
+
+T: ams : s03110	: s02110	 1.0
+O: ams : s03110	: ogood  	 1.0
+
+T: amw : s03110	: st	 1.0
+O: amw : s03110	: ogood  	 1.0
+R: amw : s03110	: *	 : *	 -100.0
+
+T: ac0 : s03110	: s03110	 1.0
+O: ac0 : s03110	: ogood  	 0.529553
+O: ac0 : s03110	: obad  	 0.470447
+
+T: ac1 : s03110	: s03110	 1.0
+O: ac1 : s03110	: ogood  	 0.68394
+O: ac1 : s03110	: obad  	 0.31606
+
+T: ac2 : s03110	: s03110	 1.0
+O: ac2 : s03110	: ogood  	 0.478835
+O: ac2 : s03110	: obad  	 0.521165
+
+T: as  : s03110	: st	 1.0
+O: as  : s03110	: ogood  	 1.0
+R: as  : s03110	: *	 : *	 -100.0
+
+T: amn : s03111	: st	 1.0
+O: amn : s03111	: ogood  	 1.0
+R: amn : s03111	: *	 : *	 -100.0
+
+T: ame : s03111	: s13111	 1.0
+O: ame : s03111	: ogood  	 1.0
+
+T: ams : s03111	: s02111	 1.0
+O: ams : s03111	: ogood  	 1.0
+
+T: amw : s03111	: st	 1.0
+O: amw : s03111	: ogood  	 1.0
+R: amw : s03111	: *	 : *	 -100.0
+
+T: ac0 : s03111	: s03111	 1.0
+O: ac0 : s03111	: ogood  	 0.529553
+O: ac0 : s03111	: obad  	 0.470447
+
+T: ac1 : s03111	: s03111	 1.0
+O: ac1 : s03111	: ogood  	 0.68394
+O: ac1 : s03111	: obad  	 0.31606
+
+T: ac2 : s03111	: s03111	 1.0
+O: ac2 : s03111	: ogood  	 0.521165
+O: ac2 : s03111	: obad  	 0.478835
+
+T: as  : s03111	: st	 1.0
+O: as  : s03111	: ogood  	 1.0
+R: as  : s03111	: *	 : *	 -100.0
+
+T: amn : s10000	: s11000	 1.0
+O: amn : s10000	: ogood  	 1.0
+
+T: ame : s10000	: s20000	 1.0
+O: ame : s10000	: ogood  	 1.0
+
+T: ams : s10000	: st	 1.0
+O: ams : s10000	: ogood  	 1.0
+R: ams : s10000	: *	 : *	 -100.0
+
+T: amw : s10000	: s00000	 1.0
+O: amw : s10000	: ogood  	 1.0
+
+T: ac0 : s10000	: s10000	 1.0
+O: ac0 : s10000	: ogood  	 0.378442
+O: ac0 : s10000	: obad  	 0.621558
+
+T: ac1 : s10000	: s10000	 1.0
+O: ac1 : s10000	: ogood  	 0.475106
+O: ac1 : s10000	: obad  	 0.524894
+
+T: ac2 : s10000	: s10000	 1.0
+O: ac2 : s10000	: obad  	 1.0
+
+T: as  : s10000	: s10000	 1.0
+O: as  : s10000	: ogood  	 1.0
+R: as  : s10000	: *	 : *	 -10.0
+
+T: amn : s10001	: s11001	 1.0
+O: amn : s10001	: ogood  	 1.0
+
+T: ame : s10001	: s20001	 1.0
+O: ame : s10001	: ogood  	 1.0
+
+T: ams : s10001	: st	 1.0
+O: ams : s10001	: ogood  	 1.0
+R: ams : s10001	: *	 : *	 -100.0
+
+T: amw : s10001	: s00001	 1.0
+O: amw : s10001	: ogood  	 1.0
+
+T: ac0 : s10001	: s10001	 1.0
+O: ac0 : s10001	: ogood  	 0.378442
+O: ac0 : s10001	: obad  	 0.621558
+
+T: ac1 : s10001	: s10001	 1.0
+O: ac1 : s10001	: ogood  	 0.475106
+O: ac1 : s10001	: obad  	 0.524894
+
+T: ac2 : s10001	: s10001	 1.0
+O: ac2 : s10001	: ogood  	 1.0
+
+T: as  : s10001	: s10000	 1.0
+O: as  : s10001	: ogood  	 1.0
+R: as  : s10001	: *	 : *	 10.0
+
+T: amn : s10010	: s11010	 1.0
+O: amn : s10010	: ogood  	 1.0
+
+T: ame : s10010	: s20010	 1.0
+O: ame : s10010	: ogood  	 1.0
+
+T: ams : s10010	: st	 1.0
+O: ams : s10010	: ogood  	 1.0
+R: ams : s10010	: *	 : *	 -100.0
+
+T: amw : s10010	: s00010	 1.0
+O: amw : s10010	: ogood  	 1.0
+
+T: ac0 : s10010	: s10010	 1.0
+O: ac0 : s10010	: ogood  	 0.378442
+O: ac0 : s10010	: obad  	 0.621558
+
+T: ac1 : s10010	: s10010	 1.0
+O: ac1 : s10010	: ogood  	 0.524894
+O: ac1 : s10010	: obad  	 0.475106
+
+T: ac2 : s10010	: s10010	 1.0
+O: ac2 : s10010	: obad  	 1.0
+
+T: as  : s10010	: s10010	 1.0
+O: as  : s10010	: ogood  	 1.0
+R: as  : s10010	: *	 : *	 -10.0
+
+T: amn : s10011	: s11011	 1.0
+O: amn : s10011	: ogood  	 1.0
+
+T: ame : s10011	: s20011	 1.0
+O: ame : s10011	: ogood  	 1.0
+
+T: ams : s10011	: st	 1.0
+O: ams : s10011	: ogood  	 1.0
+R: ams : s10011	: *	 : *	 -100.0
+
+T: amw : s10011	: s00011	 1.0
+O: amw : s10011	: ogood  	 1.0
+
+T: ac0 : s10011	: s10011	 1.0
+O: ac0 : s10011	: ogood  	 0.378442
+O: ac0 : s10011	: obad  	 0.621558
+
+T: ac1 : s10011	: s10011	 1.0
+O: ac1 : s10011	: ogood  	 0.524894
+O: ac1 : s10011	: obad  	 0.475106
+
+T: ac2 : s10011	: s10011	 1.0
+O: ac2 : s10011	: ogood  	 1.0
+
+T: as  : s10011	: s10010	 1.0
+O: as  : s10011	: ogood  	 1.0
+R: as  : s10011	: *	 : *	 10.0
+
+T: amn : s10100	: s11100	 1.0
+O: amn : s10100	: ogood  	 1.0
+
+T: ame : s10100	: s20100	 1.0
+O: ame : s10100	: ogood  	 1.0
+
+T: ams : s10100	: st	 1.0
+O: ams : s10100	: ogood  	 1.0
+R: ams : s10100	: *	 : *	 -100.0
+
+T: amw : s10100	: s00100	 1.0
+O: amw : s10100	: ogood  	 1.0
+
+T: ac0 : s10100	: s10100	 1.0
+O: ac0 : s10100	: ogood  	 0.621558
+O: ac0 : s10100	: obad  	 0.378442
+
+T: ac1 : s10100	: s10100	 1.0
+O: ac1 : s10100	: ogood  	 0.475106
+O: ac1 : s10100	: obad  	 0.524894
+
+T: ac2 : s10100	: s10100	 1.0
+O: ac2 : s10100	: obad  	 1.0
+
+T: as  : s10100	: s10100	 1.0
+O: as  : s10100	: ogood  	 1.0
+R: as  : s10100	: *	 : *	 -10.0
+
+T: amn : s10101	: s11101	 1.0
+O: amn : s10101	: ogood  	 1.0
+
+T: ame : s10101	: s20101	 1.0
+O: ame : s10101	: ogood  	 1.0
+
+T: ams : s10101	: st	 1.0
+O: ams : s10101	: ogood  	 1.0
+R: ams : s10101	: *	 : *	 -100.0
+
+T: amw : s10101	: s00101	 1.0
+O: amw : s10101	: ogood  	 1.0
+
+T: ac0 : s10101	: s10101	 1.0
+O: ac0 : s10101	: ogood  	 0.621558
+O: ac0 : s10101	: obad  	 0.378442
+
+T: ac1 : s10101	: s10101	 1.0
+O: ac1 : s10101	: ogood  	 0.475106
+O: ac1 : s10101	: obad  	 0.524894
+
+T: ac2 : s10101	: s10101	 1.0
+O: ac2 : s10101	: ogood  	 1.0
+
+T: as  : s10101	: s10100	 1.0
+O: as  : s10101	: ogood  	 1.0
+R: as  : s10101	: *	 : *	 10.0
+
+T: amn : s10110	: s11110	 1.0
+O: amn : s10110	: ogood  	 1.0
+
+T: ame : s10110	: s20110	 1.0
+O: ame : s10110	: ogood  	 1.0
+
+T: ams : s10110	: st	 1.0
+O: ams : s10110	: ogood  	 1.0
+R: ams : s10110	: *	 : *	 -100.0
+
+T: amw : s10110	: s00110	 1.0
+O: amw : s10110	: ogood  	 1.0
+
+T: ac0 : s10110	: s10110	 1.0
+O: ac0 : s10110	: ogood  	 0.621558
+O: ac0 : s10110	: obad  	 0.378442
+
+T: ac1 : s10110	: s10110	 1.0
+O: ac1 : s10110	: ogood  	 0.524894
+O: ac1 : s10110	: obad  	 0.475106
+
+T: ac2 : s10110	: s10110	 1.0
+O: ac2 : s10110	: obad  	 1.0
+
+T: as  : s10110	: s10110	 1.0
+O: as  : s10110	: ogood  	 1.0
+R: as  : s10110	: *	 : *	 -10.0
+
+T: amn : s10111	: s11111	 1.0
+O: amn : s10111	: ogood  	 1.0
+
+T: ame : s10111	: s20111	 1.0
+O: ame : s10111	: ogood  	 1.0
+
+T: ams : s10111	: st	 1.0
+O: ams : s10111	: ogood  	 1.0
+R: ams : s10111	: *	 : *	 -100.0
+
+T: amw : s10111	: s00111	 1.0
+O: amw : s10111	: ogood  	 1.0
+
+T: ac0 : s10111	: s10111	 1.0
+O: ac0 : s10111	: ogood  	 0.621558
+O: ac0 : s10111	: obad  	 0.378442
+
+T: ac1 : s10111	: s10111	 1.0
+O: ac1 : s10111	: ogood  	 0.524894
+O: ac1 : s10111	: obad  	 0.475106
+
+T: ac2 : s10111	: s10111	 1.0
+O: ac2 : s10111	: ogood  	 1.0
+
+T: as  : s10111	: s10110	 1.0
+O: as  : s10111	: ogood  	 1.0
+R: as  : s10111	: *	 : *	 10.0
+
+T: amn : s11000	: s12000	 1.0
+O: amn : s11000	: ogood  	 1.0
+
+T: ame : s11000	: s21000	 1.0
+O: ame : s11000	: ogood  	 1.0
+
+T: ams : s11000	: s10000	 1.0
+O: ams : s11000	: ogood  	 1.0
+
+T: amw : s11000	: s01000	 1.0
+O: amw : s11000	: ogood  	 1.0
+
+T: ac0 : s11000	: s11000	 1.0
+O: ac0 : s11000	: ogood  	 0.31606
+O: ac0 : s11000	: obad  	 0.68394
+
+T: ac1 : s11000	: s11000	 1.0
+O: ac1 : s11000	: ogood  	 0.432332
+O: ac1 : s11000	: obad  	 0.567668
+
+T: ac2 : s11000	: s11000	 1.0
+O: ac2 : s11000	: ogood  	 0.31606
+O: ac2 : s11000	: obad  	 0.68394
+
+T: as  : s11000	: st	 1.0
+O: as  : s11000	: ogood  	 1.0
+R: as  : s11000	: *	 : *	 -100.0
+
+T: amn : s11001	: s12001	 1.0
+O: amn : s11001	: ogood  	 1.0
+
+T: ame : s11001	: s21001	 1.0
+O: ame : s11001	: ogood  	 1.0
+
+T: ams : s11001	: s10001	 1.0
+O: ams : s11001	: ogood  	 1.0
+
+T: amw : s11001	: s01001	 1.0
+O: amw : s11001	: ogood  	 1.0
+
+T: ac0 : s11001	: s11001	 1.0
+O: ac0 : s11001	: ogood  	 0.31606
+O: ac0 : s11001	: obad  	 0.68394
+
+T: ac1 : s11001	: s11001	 1.0
+O: ac1 : s11001	: ogood  	 0.432332
+O: ac1 : s11001	: obad  	 0.567668
+
+T: ac2 : s11001	: s11001	 1.0
+O: ac2 : s11001	: ogood  	 0.68394
+O: ac2 : s11001	: obad  	 0.31606
+
+T: as  : s11001	: st	 1.0
+O: as  : s11001	: ogood  	 1.0
+R: as  : s11001	: *	 : *	 -100.0
+
+T: amn : s11010	: s12010	 1.0
+O: amn : s11010	: ogood  	 1.0
+
+T: ame : s11010	: s21010	 1.0
+O: ame : s11010	: ogood  	 1.0
+
+T: ams : s11010	: s10010	 1.0
+O: ams : s11010	: ogood  	 1.0
+
+T: amw : s11010	: s01010	 1.0
+O: amw : s11010	: ogood  	 1.0
+
+T: ac0 : s11010	: s11010	 1.0
+O: ac0 : s11010	: ogood  	 0.31606
+O: ac0 : s11010	: obad  	 0.68394
+
+T: ac1 : s11010	: s11010	 1.0
+O: ac1 : s11010	: ogood  	 0.567668
+O: ac1 : s11010	: obad  	 0.432332
+
+T: ac2 : s11010	: s11010	 1.0
+O: ac2 : s11010	: ogood  	 0.31606
+O: ac2 : s11010	: obad  	 0.68394
+
+T: as  : s11010	: st	 1.0
+O: as  : s11010	: ogood  	 1.0
+R: as  : s11010	: *	 : *	 -100.0
+
+T: amn : s11011	: s12011	 1.0
+O: amn : s11011	: ogood  	 1.0
+
+T: ame : s11011	: s21011	 1.0
+O: ame : s11011	: ogood  	 1.0
+
+T: ams : s11011	: s10011	 1.0
+O: ams : s11011	: ogood  	 1.0
+
+T: amw : s11011	: s01011	 1.0
+O: amw : s11011	: ogood  	 1.0
+
+T: ac0 : s11011	: s11011	 1.0
+O: ac0 : s11011	: ogood  	 0.31606
+O: ac0 : s11011	: obad  	 0.68394
+
+T: ac1 : s11011	: s11011	 1.0
+O: ac1 : s11011	: ogood  	 0.567668
+O: ac1 : s11011	: obad  	 0.432332
+
+T: ac2 : s11011	: s11011	 1.0
+O: ac2 : s11011	: ogood  	 0.68394
+O: ac2 : s11011	: obad  	 0.31606
+
+T: as  : s11011	: st	 1.0
+O: as  : s11011	: ogood  	 1.0
+R: as  : s11011	: *	 : *	 -100.0
+
+T: amn : s11100	: s12100	 1.0
+O: amn : s11100	: ogood  	 1.0
+
+T: ame : s11100	: s21100	 1.0
+O: ame : s11100	: ogood  	 1.0
+
+T: ams : s11100	: s10100	 1.0
+O: ams : s11100	: ogood  	 1.0
+
+T: amw : s11100	: s01100	 1.0
+O: amw : s11100	: ogood  	 1.0
+
+T: ac0 : s11100	: s11100	 1.0
+O: ac0 : s11100	: ogood  	 0.68394
+O: ac0 : s11100	: obad  	 0.31606
+
+T: ac1 : s11100	: s11100	 1.0
+O: ac1 : s11100	: ogood  	 0.432332
+O: ac1 : s11100	: obad  	 0.567668
+
+T: ac2 : s11100	: s11100	 1.0
+O: ac2 : s11100	: ogood  	 0.31606
+O: ac2 : s11100	: obad  	 0.68394
+
+T: as  : s11100	: st	 1.0
+O: as  : s11100	: ogood  	 1.0
+R: as  : s11100	: *	 : *	 -100.0
+
+T: amn : s11101	: s12101	 1.0
+O: amn : s11101	: ogood  	 1.0
+
+T: ame : s11101	: s21101	 1.0
+O: ame : s11101	: ogood  	 1.0
+
+T: ams : s11101	: s10101	 1.0
+O: ams : s11101	: ogood  	 1.0
+
+T: amw : s11101	: s01101	 1.0
+O: amw : s11101	: ogood  	 1.0
+
+T: ac0 : s11101	: s11101	 1.0
+O: ac0 : s11101	: ogood  	 0.68394
+O: ac0 : s11101	: obad  	 0.31606
+
+T: ac1 : s11101	: s11101	 1.0
+O: ac1 : s11101	: ogood  	 0.432332
+O: ac1 : s11101	: obad  	 0.567668
+
+T: ac2 : s11101	: s11101	 1.0
+O: ac2 : s11101	: ogood  	 0.68394
+O: ac2 : s11101	: obad  	 0.31606
+
+T: as  : s11101	: st	 1.0
+O: as  : s11101	: ogood  	 1.0
+R: as  : s11101	: *	 : *	 -100.0
+
+T: amn : s11110	: s12110	 1.0
+O: amn : s11110	: ogood  	 1.0
+
+T: ame : s11110	: s21110	 1.0
+O: ame : s11110	: ogood  	 1.0
+
+T: ams : s11110	: s10110	 1.0
+O: ams : s11110	: ogood  	 1.0
+
+T: amw : s11110	: s01110	 1.0
+O: amw : s11110	: ogood  	 1.0
+
+T: ac0 : s11110	: s11110	 1.0
+O: ac0 : s11110	: ogood  	 0.68394
+O: ac0 : s11110	: obad  	 0.31606
+
+T: ac1 : s11110	: s11110	 1.0
+O: ac1 : s11110	: ogood  	 0.567668
+O: ac1 : s11110	: obad  	 0.432332
+
+T: ac2 : s11110	: s11110	 1.0
+O: ac2 : s11110	: ogood  	 0.31606
+O: ac2 : s11110	: obad  	 0.68394
+
+T: as  : s11110	: st	 1.0
+O: as  : s11110	: ogood  	 1.0
+R: as  : s11110	: *	 : *	 -100.0
+
+T: amn : s11111	: s12111	 1.0
+O: amn : s11111	: ogood  	 1.0
+
+T: ame : s11111	: s21111	 1.0
+O: ame : s11111	: ogood  	 1.0
+
+T: ams : s11111	: s10111	 1.0
+O: ams : s11111	: ogood  	 1.0
+
+T: amw : s11111	: s01111	 1.0
+O: amw : s11111	: ogood  	 1.0
+
+T: ac0 : s11111	: s11111	 1.0
+O: ac0 : s11111	: ogood  	 0.68394
+O: ac0 : s11111	: obad  	 0.31606
+
+T: ac1 : s11111	: s11111	 1.0
+O: ac1 : s11111	: ogood  	 0.567668
+O: ac1 : s11111	: obad  	 0.432332
+
+T: ac2 : s11111	: s11111	 1.0
+O: ac2 : s11111	: ogood  	 0.68394
+O: ac2 : s11111	: obad  	 0.31606
+
+T: as  : s11111	: st	 1.0
+O: as  : s11111	: ogood  	 1.0
+R: as  : s11111	: *	 : *	 -100.0
+
+T: amn : s12000	: s13000	 1.0
+O: amn : s12000	: ogood  	 1.0
+
+T: ame : s12000	: s22000	 1.0
+O: ame : s12000	: ogood  	 1.0
+
+T: ams : s12000	: s11000	 1.0
+O: ams : s12000	: ogood  	 1.0
+
+T: amw : s12000	: s02000	 1.0
+O: amw : s12000	: ogood  	 1.0
+
+T: ac0 : s12000	: s12000	 1.0
+O: ac0 : s12000	: ogood  	 0.378442
+O: ac0 : s12000	: obad  	 0.621558
+
+T: ac1 : s12000	: s12000	 1.0
+O: ac1 : s12000	: ogood  	 0.31606
+O: ac1 : s12000	: obad  	 0.68394
+
+T: ac2 : s12000	: s12000	 1.0
+O: ac2 : s12000	: ogood  	 0.432332
+O: ac2 : s12000	: obad  	 0.567668
+
+T: as  : s12000	: st	 1.0
+O: as  : s12000	: ogood  	 1.0
+R: as  : s12000	: *	 : *	 -100.0
+
+T: amn : s12001	: s13001	 1.0
+O: amn : s12001	: ogood  	 1.0
+
+T: ame : s12001	: s22001	 1.0
+O: ame : s12001	: ogood  	 1.0
+
+T: ams : s12001	: s11001	 1.0
+O: ams : s12001	: ogood  	 1.0
+
+T: amw : s12001	: s02001	 1.0
+O: amw : s12001	: ogood  	 1.0
+
+T: ac0 : s12001	: s12001	 1.0
+O: ac0 : s12001	: ogood  	 0.378442
+O: ac0 : s12001	: obad  	 0.621558
+
+T: ac1 : s12001	: s12001	 1.0
+O: ac1 : s12001	: ogood  	 0.31606
+O: ac1 : s12001	: obad  	 0.68394
+
+T: ac2 : s12001	: s12001	 1.0
+O: ac2 : s12001	: ogood  	 0.567668
+O: ac2 : s12001	: obad  	 0.432332
+
+T: as  : s12001	: st	 1.0
+O: as  : s12001	: ogood  	 1.0
+R: as  : s12001	: *	 : *	 -100.0
+
+T: amn : s12010	: s13010	 1.0
+O: amn : s12010	: ogood  	 1.0
+
+T: ame : s12010	: s22010	 1.0
+O: ame : s12010	: ogood  	 1.0
+
+T: ams : s12010	: s11010	 1.0
+O: ams : s12010	: ogood  	 1.0
+
+T: amw : s12010	: s02010	 1.0
+O: amw : s12010	: ogood  	 1.0
+
+T: ac0 : s12010	: s12010	 1.0
+O: ac0 : s12010	: ogood  	 0.378442
+O: ac0 : s12010	: obad  	 0.621558
+
+T: ac1 : s12010	: s12010	 1.0
+O: ac1 : s12010	: ogood  	 0.68394
+O: ac1 : s12010	: obad  	 0.31606
+
+T: ac2 : s12010	: s12010	 1.0
+O: ac2 : s12010	: ogood  	 0.432332
+O: ac2 : s12010	: obad  	 0.567668
+
+T: as  : s12010	: st	 1.0
+O: as  : s12010	: ogood  	 1.0
+R: as  : s12010	: *	 : *	 -100.0
+
+T: amn : s12011	: s13011	 1.0
+O: amn : s12011	: ogood  	 1.0
+
+T: ame : s12011	: s22011	 1.0
+O: ame : s12011	: ogood  	 1.0
+
+T: ams : s12011	: s11011	 1.0
+O: ams : s12011	: ogood  	 1.0
+
+T: amw : s12011	: s02011	 1.0
+O: amw : s12011	: ogood  	 1.0
+
+T: ac0 : s12011	: s12011	 1.0
+O: ac0 : s12011	: ogood  	 0.378442
+O: ac0 : s12011	: obad  	 0.621558
+
+T: ac1 : s12011	: s12011	 1.0
+O: ac1 : s12011	: ogood  	 0.68394
+O: ac1 : s12011	: obad  	 0.31606
+
+T: ac2 : s12011	: s12011	 1.0
+O: ac2 : s12011	: ogood  	 0.567668
+O: ac2 : s12011	: obad  	 0.432332
+
+T: as  : s12011	: st	 1.0
+O: as  : s12011	: ogood  	 1.0
+R: as  : s12011	: *	 : *	 -100.0
+
+T: amn : s12100	: s13100	 1.0
+O: amn : s12100	: ogood  	 1.0
+
+T: ame : s12100	: s22100	 1.0
+O: ame : s12100	: ogood  	 1.0
+
+T: ams : s12100	: s11100	 1.0
+O: ams : s12100	: ogood  	 1.0
+
+T: amw : s12100	: s02100	 1.0
+O: amw : s12100	: ogood  	 1.0
+
+T: ac0 : s12100	: s12100	 1.0
+O: ac0 : s12100	: ogood  	 0.621558
+O: ac0 : s12100	: obad  	 0.378442
+
+T: ac1 : s12100	: s12100	 1.0
+O: ac1 : s12100	: ogood  	 0.31606
+O: ac1 : s12100	: obad  	 0.68394
+
+T: ac2 : s12100	: s12100	 1.0
+O: ac2 : s12100	: ogood  	 0.432332
+O: ac2 : s12100	: obad  	 0.567668
+
+T: as  : s12100	: st	 1.0
+O: as  : s12100	: ogood  	 1.0
+R: as  : s12100	: *	 : *	 -100.0
+
+T: amn : s12101	: s13101	 1.0
+O: amn : s12101	: ogood  	 1.0
+
+T: ame : s12101	: s22101	 1.0
+O: ame : s12101	: ogood  	 1.0
+
+T: ams : s12101	: s11101	 1.0
+O: ams : s12101	: ogood  	 1.0
+
+T: amw : s12101	: s02101	 1.0
+O: amw : s12101	: ogood  	 1.0
+
+T: ac0 : s12101	: s12101	 1.0
+O: ac0 : s12101	: ogood  	 0.621558
+O: ac0 : s12101	: obad  	 0.378442
+
+T: ac1 : s12101	: s12101	 1.0
+O: ac1 : s12101	: ogood  	 0.31606
+O: ac1 : s12101	: obad  	 0.68394
+
+T: ac2 : s12101	: s12101	 1.0
+O: ac2 : s12101	: ogood  	 0.567668
+O: ac2 : s12101	: obad  	 0.432332
+
+T: as  : s12101	: st	 1.0
+O: as  : s12101	: ogood  	 1.0
+R: as  : s12101	: *	 : *	 -100.0
+
+T: amn : s12110	: s13110	 1.0
+O: amn : s12110	: ogood  	 1.0
+
+T: ame : s12110	: s22110	 1.0
+O: ame : s12110	: ogood  	 1.0
+
+T: ams : s12110	: s11110	 1.0
+O: ams : s12110	: ogood  	 1.0
+
+T: amw : s12110	: s02110	 1.0
+O: amw : s12110	: ogood  	 1.0
+
+T: ac0 : s12110	: s12110	 1.0
+O: ac0 : s12110	: ogood  	 0.621558
+O: ac0 : s12110	: obad  	 0.378442
+
+T: ac1 : s12110	: s12110	 1.0
+O: ac1 : s12110	: ogood  	 0.68394
+O: ac1 : s12110	: obad  	 0.31606
+
+T: ac2 : s12110	: s12110	 1.0
+O: ac2 : s12110	: ogood  	 0.432332
+O: ac2 : s12110	: obad  	 0.567668
+
+T: as  : s12110	: st	 1.0
+O: as  : s12110	: ogood  	 1.0
+R: as  : s12110	: *	 : *	 -100.0
+
+T: amn : s12111	: s13111	 1.0
+O: amn : s12111	: ogood  	 1.0
+
+T: ame : s12111	: s22111	 1.0
+O: ame : s12111	: ogood  	 1.0
+
+T: ams : s12111	: s11111	 1.0
+O: ams : s12111	: ogood  	 1.0
+
+T: amw : s12111	: s02111	 1.0
+O: amw : s12111	: ogood  	 1.0
+
+T: ac0 : s12111	: s12111	 1.0
+O: ac0 : s12111	: ogood  	 0.621558
+O: ac0 : s12111	: obad  	 0.378442
+
+T: ac1 : s12111	: s12111	 1.0
+O: ac1 : s12111	: ogood  	 0.68394
+O: ac1 : s12111	: obad  	 0.31606
+
+T: ac2 : s12111	: s12111	 1.0
+O: ac2 : s12111	: ogood  	 0.567668
+O: ac2 : s12111	: obad  	 0.432332
+
+T: as  : s12111	: st	 1.0
+O: as  : s12111	: ogood  	 1.0
+R: as  : s12111	: *	 : *	 -100.0
+
+T: amn : s13000	: st	 1.0
+O: amn : s13000	: ogood  	 1.0
+R: amn : s13000	: *	 : *	 -100.0
+
+T: ame : s13000	: s23000	 1.0
+O: ame : s13000	: ogood  	 1.0
+
+T: ams : s13000	: s12000	 1.0
+O: ams : s13000	: ogood  	 1.0
+
+T: amw : s13000	: s03000	 1.0
+O: amw : s13000	: ogood  	 1.0
+
+T: ac0 : s13000	: s13000	 1.0
+O: ac0 : s13000	: ogood  	 0.446561
+O: ac0 : s13000	: obad  	 0.553439
+
+T: ac1 : s13000	: s13000	 1.0
+O: ac1 : s13000	: obad  	 1.0
+
+T: ac2 : s13000	: s13000	 1.0
+O: ac2 : s13000	: ogood  	 0.475106
+O: ac2 : s13000	: obad  	 0.524894
+
+T: as  : s13000	: s13000	 1.0
+O: as  : s13000	: ogood  	 1.0
+R: as  : s13000	: *	 : *	 -10.0
+
+T: amn : s13001	: st	 1.0
+O: amn : s13001	: ogood  	 1.0
+R: amn : s13001	: *	 : *	 -100.0
+
+T: ame : s13001	: s23001	 1.0
+O: ame : s13001	: ogood  	 1.0
+
+T: ams : s13001	: s12001	 1.0
+O: ams : s13001	: ogood  	 1.0
+
+T: amw : s13001	: s03001	 1.0
+O: amw : s13001	: ogood  	 1.0
+
+T: ac0 : s13001	: s13001	 1.0
+O: ac0 : s13001	: ogood  	 0.446561
+O: ac0 : s13001	: obad  	 0.553439
+
+T: ac1 : s13001	: s13001	 1.0
+O: ac1 : s13001	: obad  	 1.0
+
+T: ac2 : s13001	: s13001	 1.0
+O: ac2 : s13001	: ogood  	 0.524894
+O: ac2 : s13001	: obad  	 0.475106
+
+T: as  : s13001	: s13001	 1.0
+O: as  : s13001	: ogood  	 1.0
+R: as  : s13001	: *	 : *	 -10.0
+
+T: amn : s13010	: st	 1.0
+O: amn : s13010	: ogood  	 1.0
+R: amn : s13010	: *	 : *	 -100.0
+
+T: ame : s13010	: s23010	 1.0
+O: ame : s13010	: ogood  	 1.0
+
+T: ams : s13010	: s12010	 1.0
+O: ams : s13010	: ogood  	 1.0
+
+T: amw : s13010	: s03010	 1.0
+O: amw : s13010	: ogood  	 1.0
+
+T: ac0 : s13010	: s13010	 1.0
+O: ac0 : s13010	: ogood  	 0.446561
+O: ac0 : s13010	: obad  	 0.553439
+
+T: ac1 : s13010	: s13010	 1.0
+O: ac1 : s13010	: ogood  	 1.0
+
+T: ac2 : s13010	: s13010	 1.0
+O: ac2 : s13010	: ogood  	 0.475106
+O: ac2 : s13010	: obad  	 0.524894
+
+T: as  : s13010	: s13000	 1.0
+O: as  : s13010	: ogood  	 1.0
+R: as  : s13010	: *	 : *	 10.0
+
+T: amn : s13011	: st	 1.0
+O: amn : s13011	: ogood  	 1.0
+R: amn : s13011	: *	 : *	 -100.0
+
+T: ame : s13011	: s23011	 1.0
+O: ame : s13011	: ogood  	 1.0
+
+T: ams : s13011	: s12011	 1.0
+O: ams : s13011	: ogood  	 1.0
+
+T: amw : s13011	: s03011	 1.0
+O: amw : s13011	: ogood  	 1.0
+
+T: ac0 : s13011	: s13011	 1.0
+O: ac0 : s13011	: ogood  	 0.446561
+O: ac0 : s13011	: obad  	 0.553439
+
+T: ac1 : s13011	: s13011	 1.0
+O: ac1 : s13011	: ogood  	 1.0
+
+T: ac2 : s13011	: s13011	 1.0
+O: ac2 : s13011	: ogood  	 0.524894
+O: ac2 : s13011	: obad  	 0.475106
+
+T: as  : s13011	: s13001	 1.0
+O: as  : s13011	: ogood  	 1.0
+R: as  : s13011	: *	 : *	 10.0
+
+T: amn : s13100	: st	 1.0
+O: amn : s13100	: ogood  	 1.0
+R: amn : s13100	: *	 : *	 -100.0
+
+T: ame : s13100	: s23100	 1.0
+O: ame : s13100	: ogood  	 1.0
+
+T: ams : s13100	: s12100	 1.0
+O: ams : s13100	: ogood  	 1.0
+
+T: amw : s13100	: s03100	 1.0
+O: amw : s13100	: ogood  	 1.0
+
+T: ac0 : s13100	: s13100	 1.0
+O: ac0 : s13100	: ogood  	 0.553439
+O: ac0 : s13100	: obad  	 0.446561
+
+T: ac1 : s13100	: s13100	 1.0
+O: ac1 : s13100	: obad  	 1.0
+
+T: ac2 : s13100	: s13100	 1.0
+O: ac2 : s13100	: ogood  	 0.475106
+O: ac2 : s13100	: obad  	 0.524894
+
+T: as  : s13100	: s13100	 1.0
+O: as  : s13100	: ogood  	 1.0
+R: as  : s13100	: *	 : *	 -10.0
+
+T: amn : s13101	: st	 1.0
+O: amn : s13101	: ogood  	 1.0
+R: amn : s13101	: *	 : *	 -100.0
+
+T: ame : s13101	: s23101	 1.0
+O: ame : s13101	: ogood  	 1.0
+
+T: ams : s13101	: s12101	 1.0
+O: ams : s13101	: ogood  	 1.0
+
+T: amw : s13101	: s03101	 1.0
+O: amw : s13101	: ogood  	 1.0
+
+T: ac0 : s13101	: s13101	 1.0
+O: ac0 : s13101	: ogood  	 0.553439
+O: ac0 : s13101	: obad  	 0.446561
+
+T: ac1 : s13101	: s13101	 1.0
+O: ac1 : s13101	: obad  	 1.0
+
+T: ac2 : s13101	: s13101	 1.0
+O: ac2 : s13101	: ogood  	 0.524894
+O: ac2 : s13101	: obad  	 0.475106
+
+T: as  : s13101	: s13101	 1.0
+O: as  : s13101	: ogood  	 1.0
+R: as  : s13101	: *	 : *	 -10.0
+
+T: amn : s13110	: st	 1.0
+O: amn : s13110	: ogood  	 1.0
+R: amn : s13110	: *	 : *	 -100.0
+
+T: ame : s13110	: s23110	 1.0
+O: ame : s13110	: ogood  	 1.0
+
+T: ams : s13110	: s12110	 1.0
+O: ams : s13110	: ogood  	 1.0
+
+T: amw : s13110	: s03110	 1.0
+O: amw : s13110	: ogood  	 1.0
+
+T: ac0 : s13110	: s13110	 1.0
+O: ac0 : s13110	: ogood  	 0.553439
+O: ac0 : s13110	: obad  	 0.446561
+
+T: ac1 : s13110	: s13110	 1.0
+O: ac1 : s13110	: ogood  	 1.0
+
+T: ac2 : s13110	: s13110	 1.0
+O: ac2 : s13110	: ogood  	 0.475106
+O: ac2 : s13110	: obad  	 0.524894
+
+T: as  : s13110	: s13100	 1.0
+O: as  : s13110	: ogood  	 1.0
+R: as  : s13110	: *	 : *	 10.0
+
+T: amn : s13111	: st	 1.0
+O: amn : s13111	: ogood  	 1.0
+R: amn : s13111	: *	 : *	 -100.0
+
+T: ame : s13111	: s23111	 1.0
+O: ame : s13111	: ogood  	 1.0
+
+T: ams : s13111	: s12111	 1.0
+O: ams : s13111	: ogood  	 1.0
+
+T: amw : s13111	: s03111	 1.0
+O: amw : s13111	: ogood  	 1.0
+
+T: ac0 : s13111	: s13111	 1.0
+O: ac0 : s13111	: ogood  	 0.553439
+O: ac0 : s13111	: obad  	 0.446561
+
+T: ac1 : s13111	: s13111	 1.0
+O: ac1 : s13111	: ogood  	 1.0
+
+T: ac2 : s13111	: s13111	 1.0
+O: ac2 : s13111	: ogood  	 0.524894
+O: ac2 : s13111	: obad  	 0.475106
+
+T: as  : s13111	: s13101	 1.0
+O: as  : s13111	: ogood  	 1.0
+R: as  : s13111	: *	 : *	 10.0
+
+T: amn : s20000	: s21000	 1.0
+O: amn : s20000	: ogood  	 1.0
+
+T: ame : s20000	: s30000	 1.0
+O: ame : s20000	: ogood  	 1.0
+
+T: ams : s20000	: st	 1.0
+O: ams : s20000	: ogood  	 1.0
+R: ams : s20000	: *	 : *	 -100.0
+
+T: amw : s20000	: s10000	 1.0
+O: amw : s20000	: ogood  	 1.0
+
+T: ac0 : s20000	: s20000	 1.0
+O: ac0 : s20000	: ogood  	 0.31606
+O: ac0 : s20000	: obad  	 0.68394
+
+T: ac1 : s20000	: s20000	 1.0
+O: ac1 : s20000	: ogood  	 0.478835
+O: ac1 : s20000	: obad  	 0.521165
+
+T: ac2 : s20000	: s20000	 1.0
+O: ac2 : s20000	: ogood  	 0.31606
+O: ac2 : s20000	: obad  	 0.68394
+
+T: as  : s20000	: st	 1.0
+O: as  : s20000	: ogood  	 1.0
+R: as  : s20000	: *	 : *	 -100.0
+
+T: amn : s20001	: s21001	 1.0
+O: amn : s20001	: ogood  	 1.0
+
+T: ame : s20001	: s30001	 1.0
+O: ame : s20001	: ogood  	 1.0
+
+T: ams : s20001	: st	 1.0
+O: ams : s20001	: ogood  	 1.0
+R: ams : s20001	: *	 : *	 -100.0
+
+T: amw : s20001	: s10001	 1.0
+O: amw : s20001	: ogood  	 1.0
+
+T: ac0 : s20001	: s20001	 1.0
+O: ac0 : s20001	: ogood  	 0.31606
+O: ac0 : s20001	: obad  	 0.68394
+
+T: ac1 : s20001	: s20001	 1.0
+O: ac1 : s20001	: ogood  	 0.478835
+O: ac1 : s20001	: obad  	 0.521165
+
+T: ac2 : s20001	: s20001	 1.0
+O: ac2 : s20001	: ogood  	 0.68394
+O: ac2 : s20001	: obad  	 0.31606
+
+T: as  : s20001	: st	 1.0
+O: as  : s20001	: ogood  	 1.0
+R: as  : s20001	: *	 : *	 -100.0
+
+T: amn : s20010	: s21010	 1.0
+O: amn : s20010	: ogood  	 1.0
+
+T: ame : s20010	: s30010	 1.0
+O: ame : s20010	: ogood  	 1.0
+
+T: ams : s20010	: st	 1.0
+O: ams : s20010	: ogood  	 1.0
+R: ams : s20010	: *	 : *	 -100.0
+
+T: amw : s20010	: s10010	 1.0
+O: amw : s20010	: ogood  	 1.0
+
+T: ac0 : s20010	: s20010	 1.0
+O: ac0 : s20010	: ogood  	 0.31606
+O: ac0 : s20010	: obad  	 0.68394
+
+T: ac1 : s20010	: s20010	 1.0
+O: ac1 : s20010	: ogood  	 0.521165
+O: ac1 : s20010	: obad  	 0.478835
+
+T: ac2 : s20010	: s20010	 1.0
+O: ac2 : s20010	: ogood  	 0.31606
+O: ac2 : s20010	: obad  	 0.68394
+
+T: as  : s20010	: st	 1.0
+O: as  : s20010	: ogood  	 1.0
+R: as  : s20010	: *	 : *	 -100.0
+
+T: amn : s20011	: s21011	 1.0
+O: amn : s20011	: ogood  	 1.0
+
+T: ame : s20011	: s30011	 1.0
+O: ame : s20011	: ogood  	 1.0
+
+T: ams : s20011	: st	 1.0
+O: ams : s20011	: ogood  	 1.0
+R: ams : s20011	: *	 : *	 -100.0
+
+T: amw : s20011	: s10011	 1.0
+O: amw : s20011	: ogood  	 1.0
+
+T: ac0 : s20011	: s20011	 1.0
+O: ac0 : s20011	: ogood  	 0.31606
+O: ac0 : s20011	: obad  	 0.68394
+
+T: ac1 : s20011	: s20011	 1.0
+O: ac1 : s20011	: ogood  	 0.521165
+O: ac1 : s20011	: obad  	 0.478835
+
+T: ac2 : s20011	: s20011	 1.0
+O: ac2 : s20011	: ogood  	 0.68394
+O: ac2 : s20011	: obad  	 0.31606
+
+T: as  : s20011	: st	 1.0
+O: as  : s20011	: ogood  	 1.0
+R: as  : s20011	: *	 : *	 -100.0
+
+T: amn : s20100	: s21100	 1.0
+O: amn : s20100	: ogood  	 1.0
+
+T: ame : s20100	: s30100	 1.0
+O: ame : s20100	: ogood  	 1.0
+
+T: ams : s20100	: st	 1.0
+O: ams : s20100	: ogood  	 1.0
+R: ams : s20100	: *	 : *	 -100.0
+
+T: amw : s20100	: s10100	 1.0
+O: amw : s20100	: ogood  	 1.0
+
+T: ac0 : s20100	: s20100	 1.0
+O: ac0 : s20100	: ogood  	 0.68394
+O: ac0 : s20100	: obad  	 0.31606
+
+T: ac1 : s20100	: s20100	 1.0
+O: ac1 : s20100	: ogood  	 0.478835
+O: ac1 : s20100	: obad  	 0.521165
+
+T: ac2 : s20100	: s20100	 1.0
+O: ac2 : s20100	: ogood  	 0.31606
+O: ac2 : s20100	: obad  	 0.68394
+
+T: as  : s20100	: st	 1.0
+O: as  : s20100	: ogood  	 1.0
+R: as  : s20100	: *	 : *	 -100.0
+
+T: amn : s20101	: s21101	 1.0
+O: amn : s20101	: ogood  	 1.0
+
+T: ame : s20101	: s30101	 1.0
+O: ame : s20101	: ogood  	 1.0
+
+T: ams : s20101	: st	 1.0
+O: ams : s20101	: ogood  	 1.0
+R: ams : s20101	: *	 : *	 -100.0
+
+T: amw : s20101	: s10101	 1.0
+O: amw : s20101	: ogood  	 1.0
+
+T: ac0 : s20101	: s20101	 1.0
+O: ac0 : s20101	: ogood  	 0.68394
+O: ac0 : s20101	: obad  	 0.31606
+
+T: ac1 : s20101	: s20101	 1.0
+O: ac1 : s20101	: ogood  	 0.478835
+O: ac1 : s20101	: obad  	 0.521165
+
+T: ac2 : s20101	: s20101	 1.0
+O: ac2 : s20101	: ogood  	 0.68394
+O: ac2 : s20101	: obad  	 0.31606
+
+T: as  : s20101	: st	 1.0
+O: as  : s20101	: ogood  	 1.0
+R: as  : s20101	: *	 : *	 -100.0
+
+T: amn : s20110	: s21110	 1.0
+O: amn : s20110	: ogood  	 1.0
+
+T: ame : s20110	: s30110	 1.0
+O: ame : s20110	: ogood  	 1.0
+
+T: ams : s20110	: st	 1.0
+O: ams : s20110	: ogood  	 1.0
+R: ams : s20110	: *	 : *	 -100.0
+
+T: amw : s20110	: s10110	 1.0
+O: amw : s20110	: ogood  	 1.0
+
+T: ac0 : s20110	: s20110	 1.0
+O: ac0 : s20110	: ogood  	 0.68394
+O: ac0 : s20110	: obad  	 0.31606
+
+T: ac1 : s20110	: s20110	 1.0
+O: ac1 : s20110	: ogood  	 0.521165
+O: ac1 : s20110	: obad  	 0.478835
+
+T: ac2 : s20110	: s20110	 1.0
+O: ac2 : s20110	: ogood  	 0.31606
+O: ac2 : s20110	: obad  	 0.68394
+
+T: as  : s20110	: st	 1.0
+O: as  : s20110	: ogood  	 1.0
+R: as  : s20110	: *	 : *	 -100.0
+
+T: amn : s20111	: s21111	 1.0
+O: amn : s20111	: ogood  	 1.0
+
+T: ame : s20111	: s30111	 1.0
+O: ame : s20111	: ogood  	 1.0
+
+T: ams : s20111	: st	 1.0
+O: ams : s20111	: ogood  	 1.0
+R: ams : s20111	: *	 : *	 -100.0
+
+T: amw : s20111	: s10111	 1.0
+O: amw : s20111	: ogood  	 1.0
+
+T: ac0 : s20111	: s20111	 1.0
+O: ac0 : s20111	: ogood  	 0.68394
+O: ac0 : s20111	: obad  	 0.31606
+
+T: ac1 : s20111	: s20111	 1.0
+O: ac1 : s20111	: ogood  	 0.521165
+O: ac1 : s20111	: obad  	 0.478835
+
+T: ac2 : s20111	: s20111	 1.0
+O: ac2 : s20111	: ogood  	 0.68394
+O: ac2 : s20111	: obad  	 0.31606
+
+T: as  : s20111	: st	 1.0
+O: as  : s20111	: ogood  	 1.0
+R: as  : s20111	: *	 : *	 -100.0
+
+T: amn : s21000	: s22000	 1.0
+O: amn : s21000	: ogood  	 1.0
+
+T: ame : s21000	: s31000	 1.0
+O: ame : s21000	: ogood  	 1.0
+
+T: ams : s21000	: s20000	 1.0
+O: ams : s21000	: ogood  	 1.0
+
+T: amw : s21000	: s11000	 1.0
+O: amw : s21000	: ogood  	 1.0
+
+T: ac0 : s21000	: s21000	 1.0
+O: ac0 : s21000	: obad  	 1.0
+
+T: ac1 : s21000	: s21000	 1.0
+O: ac1 : s21000	: ogood  	 0.446561
+O: ac1 : s21000	: obad  	 0.553439
+
+T: ac2 : s21000	: s21000	 1.0
+O: ac2 : s21000	: ogood  	 0.378442
+O: ac2 : s21000	: obad  	 0.621558
+
+T: as  : s21000	: s21000	 1.0
+O: as  : s21000	: ogood  	 1.0
+R: as  : s21000	: *	 : *	 -10.0
+
+T: amn : s21001	: s22001	 1.0
+O: amn : s21001	: ogood  	 1.0
+
+T: ame : s21001	: s31001	 1.0
+O: ame : s21001	: ogood  	 1.0
+
+T: ams : s21001	: s20001	 1.0
+O: ams : s21001	: ogood  	 1.0
+
+T: amw : s21001	: s11001	 1.0
+O: amw : s21001	: ogood  	 1.0
+
+T: ac0 : s21001	: s21001	 1.0
+O: ac0 : s21001	: obad  	 1.0
+
+T: ac1 : s21001	: s21001	 1.0
+O: ac1 : s21001	: ogood  	 0.446561
+O: ac1 : s21001	: obad  	 0.553439
+
+T: ac2 : s21001	: s21001	 1.0
+O: ac2 : s21001	: ogood  	 0.621558
+O: ac2 : s21001	: obad  	 0.378442
+
+T: as  : s21001	: s21001	 1.0
+O: as  : s21001	: ogood  	 1.0
+R: as  : s21001	: *	 : *	 -10.0
+
+T: amn : s21010	: s22010	 1.0
+O: amn : s21010	: ogood  	 1.0
+
+T: ame : s21010	: s31010	 1.0
+O: ame : s21010	: ogood  	 1.0
+
+T: ams : s21010	: s20010	 1.0
+O: ams : s21010	: ogood  	 1.0
+
+T: amw : s21010	: s11010	 1.0
+O: amw : s21010	: ogood  	 1.0
+
+T: ac0 : s21010	: s21010	 1.0
+O: ac0 : s21010	: obad  	 1.0
+
+T: ac1 : s21010	: s21010	 1.0
+O: ac1 : s21010	: ogood  	 0.553439
+O: ac1 : s21010	: obad  	 0.446561
+
+T: ac2 : s21010	: s21010	 1.0
+O: ac2 : s21010	: ogood  	 0.378442
+O: ac2 : s21010	: obad  	 0.621558
+
+T: as  : s21010	: s21010	 1.0
+O: as  : s21010	: ogood  	 1.0
+R: as  : s21010	: *	 : *	 -10.0
+
+T: amn : s21011	: s22011	 1.0
+O: amn : s21011	: ogood  	 1.0
+
+T: ame : s21011	: s31011	 1.0
+O: ame : s21011	: ogood  	 1.0
+
+T: ams : s21011	: s20011	 1.0
+O: ams : s21011	: ogood  	 1.0
+
+T: amw : s21011	: s11011	 1.0
+O: amw : s21011	: ogood  	 1.0
+
+T: ac0 : s21011	: s21011	 1.0
+O: ac0 : s21011	: obad  	 1.0
+
+T: ac1 : s21011	: s21011	 1.0
+O: ac1 : s21011	: ogood  	 0.553439
+O: ac1 : s21011	: obad  	 0.446561
+
+T: ac2 : s21011	: s21011	 1.0
+O: ac2 : s21011	: ogood  	 0.621558
+O: ac2 : s21011	: obad  	 0.378442
+
+T: as  : s21011	: s21011	 1.0
+O: as  : s21011	: ogood  	 1.0
+R: as  : s21011	: *	 : *	 -10.0
+
+T: amn : s21100	: s22100	 1.0
+O: amn : s21100	: ogood  	 1.0
+
+T: ame : s21100	: s31100	 1.0
+O: ame : s21100	: ogood  	 1.0
+
+T: ams : s21100	: s20100	 1.0
+O: ams : s21100	: ogood  	 1.0
+
+T: amw : s21100	: s11100	 1.0
+O: amw : s21100	: ogood  	 1.0
+
+T: ac0 : s21100	: s21100	 1.0
+O: ac0 : s21100	: ogood  	 1.0
+
+T: ac1 : s21100	: s21100	 1.0
+O: ac1 : s21100	: ogood  	 0.446561
+O: ac1 : s21100	: obad  	 0.553439
+
+T: ac2 : s21100	: s21100	 1.0
+O: ac2 : s21100	: ogood  	 0.378442
+O: ac2 : s21100	: obad  	 0.621558
+
+T: as  : s21100	: s21000	 1.0
+O: as  : s21100	: ogood  	 1.0
+R: as  : s21100	: *	 : *	 10.0
+
+T: amn : s21101	: s22101	 1.0
+O: amn : s21101	: ogood  	 1.0
+
+T: ame : s21101	: s31101	 1.0
+O: ame : s21101	: ogood  	 1.0
+
+T: ams : s21101	: s20101	 1.0
+O: ams : s21101	: ogood  	 1.0
+
+T: amw : s21101	: s11101	 1.0
+O: amw : s21101	: ogood  	 1.0
+
+T: ac0 : s21101	: s21101	 1.0
+O: ac0 : s21101	: ogood  	 1.0
+
+T: ac1 : s21101	: s21101	 1.0
+O: ac1 : s21101	: ogood  	 0.446561
+O: ac1 : s21101	: obad  	 0.553439
+
+T: ac2 : s21101	: s21101	 1.0
+O: ac2 : s21101	: ogood  	 0.621558
+O: ac2 : s21101	: obad  	 0.378442
+
+T: as  : s21101	: s21001	 1.0
+O: as  : s21101	: ogood  	 1.0
+R: as  : s21101	: *	 : *	 10.0
+
+T: amn : s21110	: s22110	 1.0
+O: amn : s21110	: ogood  	 1.0
+
+T: ame : s21110	: s31110	 1.0
+O: ame : s21110	: ogood  	 1.0
+
+T: ams : s21110	: s20110	 1.0
+O: ams : s21110	: ogood  	 1.0
+
+T: amw : s21110	: s11110	 1.0
+O: amw : s21110	: ogood  	 1.0
+
+T: ac0 : s21110	: s21110	 1.0
+O: ac0 : s21110	: ogood  	 1.0
+
+T: ac1 : s21110	: s21110	 1.0
+O: ac1 : s21110	: ogood  	 0.553439
+O: ac1 : s21110	: obad  	 0.446561
+
+T: ac2 : s21110	: s21110	 1.0
+O: ac2 : s21110	: ogood  	 0.378442
+O: ac2 : s21110	: obad  	 0.621558
+
+T: as  : s21110	: s21010	 1.0
+O: as  : s21110	: ogood  	 1.0
+R: as  : s21110	: *	 : *	 10.0
+
+T: amn : s21111	: s22111	 1.0
+O: amn : s21111	: ogood  	 1.0
+
+T: ame : s21111	: s31111	 1.0
+O: ame : s21111	: ogood  	 1.0
+
+T: ams : s21111	: s20111	 1.0
+O: ams : s21111	: ogood  	 1.0
+
+T: amw : s21111	: s11111	 1.0
+O: amw : s21111	: ogood  	 1.0
+
+T: ac0 : s21111	: s21111	 1.0
+O: ac0 : s21111	: ogood  	 1.0
+
+T: ac1 : s21111	: s21111	 1.0
+O: ac1 : s21111	: ogood  	 0.553439
+O: ac1 : s21111	: obad  	 0.446561
+
+T: ac2 : s21111	: s21111	 1.0
+O: ac2 : s21111	: ogood  	 0.621558
+O: ac2 : s21111	: obad  	 0.378442
+
+T: as  : s21111	: s21011	 1.0
+O: as  : s21111	: ogood  	 1.0
+R: as  : s21111	: *	 : *	 10.0
+
+T: amn : s22000	: s23000	 1.0
+O: amn : s22000	: ogood  	 1.0
+
+T: ame : s22000	: s32000	 1.0
+O: ame : s22000	: ogood  	 1.0
+
+T: ams : s22000	: s21000	 1.0
+O: ams : s22000	: ogood  	 1.0
+
+T: amw : s22000	: s12000	 1.0
+O: amw : s22000	: ogood  	 1.0
+
+T: ac0 : s22000	: s22000	 1.0
+O: ac0 : s22000	: ogood  	 0.31606
+O: ac0 : s22000	: obad  	 0.68394
+
+T: ac1 : s22000	: s22000	 1.0
+O: ac1 : s22000	: ogood  	 0.378442
+O: ac1 : s22000	: obad  	 0.621558
+
+T: ac2 : s22000	: s22000	 1.0
+O: ac2 : s22000	: ogood  	 0.446561
+O: ac2 : s22000	: obad  	 0.553439
+
+T: as  : s22000	: st	 1.0
+O: as  : s22000	: ogood  	 1.0
+R: as  : s22000	: *	 : *	 -100.0
+
+T: amn : s22001	: s23001	 1.0
+O: amn : s22001	: ogood  	 1.0
+
+T: ame : s22001	: s32001	 1.0
+O: ame : s22001	: ogood  	 1.0
+
+T: ams : s22001	: s21001	 1.0
+O: ams : s22001	: ogood  	 1.0
+
+T: amw : s22001	: s12001	 1.0
+O: amw : s22001	: ogood  	 1.0
+
+T: ac0 : s22001	: s22001	 1.0
+O: ac0 : s22001	: ogood  	 0.31606
+O: ac0 : s22001	: obad  	 0.68394
+
+T: ac1 : s22001	: s22001	 1.0
+O: ac1 : s22001	: ogood  	 0.378442
+O: ac1 : s22001	: obad  	 0.621558
+
+T: ac2 : s22001	: s22001	 1.0
+O: ac2 : s22001	: ogood  	 0.553439
+O: ac2 : s22001	: obad  	 0.446561
+
+T: as  : s22001	: st	 1.0
+O: as  : s22001	: ogood  	 1.0
+R: as  : s22001	: *	 : *	 -100.0
+
+T: amn : s22010	: s23010	 1.0
+O: amn : s22010	: ogood  	 1.0
+
+T: ame : s22010	: s32010	 1.0
+O: ame : s22010	: ogood  	 1.0
+
+T: ams : s22010	: s21010	 1.0
+O: ams : s22010	: ogood  	 1.0
+
+T: amw : s22010	: s12010	 1.0
+O: amw : s22010	: ogood  	 1.0
+
+T: ac0 : s22010	: s22010	 1.0
+O: ac0 : s22010	: ogood  	 0.31606
+O: ac0 : s22010	: obad  	 0.68394
+
+T: ac1 : s22010	: s22010	 1.0
+O: ac1 : s22010	: ogood  	 0.621558
+O: ac1 : s22010	: obad  	 0.378442
+
+T: ac2 : s22010	: s22010	 1.0
+O: ac2 : s22010	: ogood  	 0.446561
+O: ac2 : s22010	: obad  	 0.553439
+
+T: as  : s22010	: st	 1.0
+O: as  : s22010	: ogood  	 1.0
+R: as  : s22010	: *	 : *	 -100.0
+
+T: amn : s22011	: s23011	 1.0
+O: amn : s22011	: ogood  	 1.0
+
+T: ame : s22011	: s32011	 1.0
+O: ame : s22011	: ogood  	 1.0
+
+T: ams : s22011	: s21011	 1.0
+O: ams : s22011	: ogood  	 1.0
+
+T: amw : s22011	: s12011	 1.0
+O: amw : s22011	: ogood  	 1.0
+
+T: ac0 : s22011	: s22011	 1.0
+O: ac0 : s22011	: ogood  	 0.31606
+O: ac0 : s22011	: obad  	 0.68394
+
+T: ac1 : s22011	: s22011	 1.0
+O: ac1 : s22011	: ogood  	 0.621558
+O: ac1 : s22011	: obad  	 0.378442
+
+T: ac2 : s22011	: s22011	 1.0
+O: ac2 : s22011	: ogood  	 0.553439
+O: ac2 : s22011	: obad  	 0.446561
+
+T: as  : s22011	: st	 1.0
+O: as  : s22011	: ogood  	 1.0
+R: as  : s22011	: *	 : *	 -100.0
+
+T: amn : s22100	: s23100	 1.0
+O: amn : s22100	: ogood  	 1.0
+
+T: ame : s22100	: s32100	 1.0
+O: ame : s22100	: ogood  	 1.0
+
+T: ams : s22100	: s21100	 1.0
+O: ams : s22100	: ogood  	 1.0
+
+T: amw : s22100	: s12100	 1.0
+O: amw : s22100	: ogood  	 1.0
+
+T: ac0 : s22100	: s22100	 1.0
+O: ac0 : s22100	: ogood  	 0.68394
+O: ac0 : s22100	: obad  	 0.31606
+
+T: ac1 : s22100	: s22100	 1.0
+O: ac1 : s22100	: ogood  	 0.378442
+O: ac1 : s22100	: obad  	 0.621558
+
+T: ac2 : s22100	: s22100	 1.0
+O: ac2 : s22100	: ogood  	 0.446561
+O: ac2 : s22100	: obad  	 0.553439
+
+T: as  : s22100	: st	 1.0
+O: as  : s22100	: ogood  	 1.0
+R: as  : s22100	: *	 : *	 -100.0
+
+T: amn : s22101	: s23101	 1.0
+O: amn : s22101	: ogood  	 1.0
+
+T: ame : s22101	: s32101	 1.0
+O: ame : s22101	: ogood  	 1.0
+
+T: ams : s22101	: s21101	 1.0
+O: ams : s22101	: ogood  	 1.0
+
+T: amw : s22101	: s12101	 1.0
+O: amw : s22101	: ogood  	 1.0
+
+T: ac0 : s22101	: s22101	 1.0
+O: ac0 : s22101	: ogood  	 0.68394
+O: ac0 : s22101	: obad  	 0.31606
+
+T: ac1 : s22101	: s22101	 1.0
+O: ac1 : s22101	: ogood  	 0.378442
+O: ac1 : s22101	: obad  	 0.621558
+
+T: ac2 : s22101	: s22101	 1.0
+O: ac2 : s22101	: ogood  	 0.553439
+O: ac2 : s22101	: obad  	 0.446561
+
+T: as  : s22101	: st	 1.0
+O: as  : s22101	: ogood  	 1.0
+R: as  : s22101	: *	 : *	 -100.0
+
+T: amn : s22110	: s23110	 1.0
+O: amn : s22110	: ogood  	 1.0
+
+T: ame : s22110	: s32110	 1.0
+O: ame : s22110	: ogood  	 1.0
+
+T: ams : s22110	: s21110	 1.0
+O: ams : s22110	: ogood  	 1.0
+
+T: amw : s22110	: s12110	 1.0
+O: amw : s22110	: ogood  	 1.0
+
+T: ac0 : s22110	: s22110	 1.0
+O: ac0 : s22110	: ogood  	 0.68394
+O: ac0 : s22110	: obad  	 0.31606
+
+T: ac1 : s22110	: s22110	 1.0
+O: ac1 : s22110	: ogood  	 0.621558
+O: ac1 : s22110	: obad  	 0.378442
+
+T: ac2 : s22110	: s22110	 1.0
+O: ac2 : s22110	: ogood  	 0.446561
+O: ac2 : s22110	: obad  	 0.553439
+
+T: as  : s22110	: st	 1.0
+O: as  : s22110	: ogood  	 1.0
+R: as  : s22110	: *	 : *	 -100.0
+
+T: amn : s22111	: s23111	 1.0
+O: amn : s22111	: ogood  	 1.0
+
+T: ame : s22111	: s32111	 1.0
+O: ame : s22111	: ogood  	 1.0
+
+T: ams : s22111	: s21111	 1.0
+O: ams : s22111	: ogood  	 1.0
+
+T: amw : s22111	: s12111	 1.0
+O: amw : s22111	: ogood  	 1.0
+
+T: ac0 : s22111	: s22111	 1.0
+O: ac0 : s22111	: ogood  	 0.68394
+O: ac0 : s22111	: obad  	 0.31606
+
+T: ac1 : s22111	: s22111	 1.0
+O: ac1 : s22111	: ogood  	 0.621558
+O: ac1 : s22111	: obad  	 0.378442
+
+T: ac2 : s22111	: s22111	 1.0
+O: ac2 : s22111	: ogood  	 0.553439
+O: ac2 : s22111	: obad  	 0.446561
+
+T: as  : s22111	: st	 1.0
+O: as  : s22111	: ogood  	 1.0
+R: as  : s22111	: *	 : *	 -100.0
+
+T: amn : s23000	: st	 1.0
+O: amn : s23000	: ogood  	 1.0
+R: amn : s23000	: *	 : *	 -100.0
+
+T: ame : s23000	: s33000	 1.0
+O: ame : s23000	: ogood  	 1.0
+
+T: ams : s23000	: s22000	 1.0
+O: ams : s23000	: ogood  	 1.0
+
+T: amw : s23000	: s13000	 1.0
+O: amw : s23000	: ogood  	 1.0
+
+T: ac0 : s23000	: s23000	 1.0
+O: ac0 : s23000	: ogood  	 0.432332
+O: ac0 : s23000	: obad  	 0.567668
+
+T: ac1 : s23000	: s23000	 1.0
+O: ac1 : s23000	: ogood  	 0.31606
+O: ac1 : s23000	: obad  	 0.68394
+
+T: ac2 : s23000	: s23000	 1.0
+O: ac2 : s23000	: ogood  	 0.478835
+O: ac2 : s23000	: obad  	 0.521165
+
+T: as  : s23000	: st	 1.0
+O: as  : s23000	: ogood  	 1.0
+R: as  : s23000	: *	 : *	 -100.0
+
+T: amn : s23001	: st	 1.0
+O: amn : s23001	: ogood  	 1.0
+R: amn : s23001	: *	 : *	 -100.0
+
+T: ame : s23001	: s33001	 1.0
+O: ame : s23001	: ogood  	 1.0
+
+T: ams : s23001	: s22001	 1.0
+O: ams : s23001	: ogood  	 1.0
+
+T: amw : s23001	: s13001	 1.0
+O: amw : s23001	: ogood  	 1.0
+
+T: ac0 : s23001	: s23001	 1.0
+O: ac0 : s23001	: ogood  	 0.432332
+O: ac0 : s23001	: obad  	 0.567668
+
+T: ac1 : s23001	: s23001	 1.0
+O: ac1 : s23001	: ogood  	 0.31606
+O: ac1 : s23001	: obad  	 0.68394
+
+T: ac2 : s23001	: s23001	 1.0
+O: ac2 : s23001	: ogood  	 0.521165
+O: ac2 : s23001	: obad  	 0.478835
+
+T: as  : s23001	: st	 1.0
+O: as  : s23001	: ogood  	 1.0
+R: as  : s23001	: *	 : *	 -100.0
+
+T: amn : s23010	: st	 1.0
+O: amn : s23010	: ogood  	 1.0
+R: amn : s23010	: *	 : *	 -100.0
+
+T: ame : s23010	: s33010	 1.0
+O: ame : s23010	: ogood  	 1.0
+
+T: ams : s23010	: s22010	 1.0
+O: ams : s23010	: ogood  	 1.0
+
+T: amw : s23010	: s13010	 1.0
+O: amw : s23010	: ogood  	 1.0
+
+T: ac0 : s23010	: s23010	 1.0
+O: ac0 : s23010	: ogood  	 0.432332
+O: ac0 : s23010	: obad  	 0.567668
+
+T: ac1 : s23010	: s23010	 1.0
+O: ac1 : s23010	: ogood  	 0.68394
+O: ac1 : s23010	: obad  	 0.31606
+
+T: ac2 : s23010	: s23010	 1.0
+O: ac2 : s23010	: ogood  	 0.478835
+O: ac2 : s23010	: obad  	 0.521165
+
+T: as  : s23010	: st	 1.0
+O: as  : s23010	: ogood  	 1.0
+R: as  : s23010	: *	 : *	 -100.0
+
+T: amn : s23011	: st	 1.0
+O: amn : s23011	: ogood  	 1.0
+R: amn : s23011	: *	 : *	 -100.0
+
+T: ame : s23011	: s33011	 1.0
+O: ame : s23011	: ogood  	 1.0
+
+T: ams : s23011	: s22011	 1.0
+O: ams : s23011	: ogood  	 1.0
+
+T: amw : s23011	: s13011	 1.0
+O: amw : s23011	: ogood  	 1.0
+
+T: ac0 : s23011	: s23011	 1.0
+O: ac0 : s23011	: ogood  	 0.432332
+O: ac0 : s23011	: obad  	 0.567668
+
+T: ac1 : s23011	: s23011	 1.0
+O: ac1 : s23011	: ogood  	 0.68394
+O: ac1 : s23011	: obad  	 0.31606
+
+T: ac2 : s23011	: s23011	 1.0
+O: ac2 : s23011	: ogood  	 0.521165
+O: ac2 : s23011	: obad  	 0.478835
+
+T: as  : s23011	: st	 1.0
+O: as  : s23011	: ogood  	 1.0
+R: as  : s23011	: *	 : *	 -100.0
+
+T: amn : s23100	: st	 1.0
+O: amn : s23100	: ogood  	 1.0
+R: amn : s23100	: *	 : *	 -100.0
+
+T: ame : s23100	: s33100	 1.0
+O: ame : s23100	: ogood  	 1.0
+
+T: ams : s23100	: s22100	 1.0
+O: ams : s23100	: ogood  	 1.0
+
+T: amw : s23100	: s13100	 1.0
+O: amw : s23100	: ogood  	 1.0
+
+T: ac0 : s23100	: s23100	 1.0
+O: ac0 : s23100	: ogood  	 0.567668
+O: ac0 : s23100	: obad  	 0.432332
+
+T: ac1 : s23100	: s23100	 1.0
+O: ac1 : s23100	: ogood  	 0.31606
+O: ac1 : s23100	: obad  	 0.68394
+
+T: ac2 : s23100	: s23100	 1.0
+O: ac2 : s23100	: ogood  	 0.478835
+O: ac2 : s23100	: obad  	 0.521165
+
+T: as  : s23100	: st	 1.0
+O: as  : s23100	: ogood  	 1.0
+R: as  : s23100	: *	 : *	 -100.0
+
+T: amn : s23101	: st	 1.0
+O: amn : s23101	: ogood  	 1.0
+R: amn : s23101	: *	 : *	 -100.0
+
+T: ame : s23101	: s33101	 1.0
+O: ame : s23101	: ogood  	 1.0
+
+T: ams : s23101	: s22101	 1.0
+O: ams : s23101	: ogood  	 1.0
+
+T: amw : s23101	: s13101	 1.0
+O: amw : s23101	: ogood  	 1.0
+
+T: ac0 : s23101	: s23101	 1.0
+O: ac0 : s23101	: ogood  	 0.567668
+O: ac0 : s23101	: obad  	 0.432332
+
+T: ac1 : s23101	: s23101	 1.0
+O: ac1 : s23101	: ogood  	 0.31606
+O: ac1 : s23101	: obad  	 0.68394
+
+T: ac2 : s23101	: s23101	 1.0
+O: ac2 : s23101	: ogood  	 0.521165
+O: ac2 : s23101	: obad  	 0.478835
+
+T: as  : s23101	: st	 1.0
+O: as  : s23101	: ogood  	 1.0
+R: as  : s23101	: *	 : *	 -100.0
+
+T: amn : s23110	: st	 1.0
+O: amn : s23110	: ogood  	 1.0
+R: amn : s23110	: *	 : *	 -100.0
+
+T: ame : s23110	: s33110	 1.0
+O: ame : s23110	: ogood  	 1.0
+
+T: ams : s23110	: s22110	 1.0
+O: ams : s23110	: ogood  	 1.0
+
+T: amw : s23110	: s13110	 1.0
+O: amw : s23110	: ogood  	 1.0
+
+T: ac0 : s23110	: s23110	 1.0
+O: ac0 : s23110	: ogood  	 0.567668
+O: ac0 : s23110	: obad  	 0.432332
+
+T: ac1 : s23110	: s23110	 1.0
+O: ac1 : s23110	: ogood  	 0.68394
+O: ac1 : s23110	: obad  	 0.31606
+
+T: ac2 : s23110	: s23110	 1.0
+O: ac2 : s23110	: ogood  	 0.478835
+O: ac2 : s23110	: obad  	 0.521165
+
+T: as  : s23110	: st	 1.0
+O: as  : s23110	: ogood  	 1.0
+R: as  : s23110	: *	 : *	 -100.0
+
+T: amn : s23111	: st	 1.0
+O: amn : s23111	: ogood  	 1.0
+R: amn : s23111	: *	 : *	 -100.0
+
+T: ame : s23111	: s33111	 1.0
+O: ame : s23111	: ogood  	 1.0
+
+T: ams : s23111	: s22111	 1.0
+O: ams : s23111	: ogood  	 1.0
+
+T: amw : s23111	: s13111	 1.0
+O: amw : s23111	: ogood  	 1.0
+
+T: ac0 : s23111	: s23111	 1.0
+O: ac0 : s23111	: ogood  	 0.567668
+O: ac0 : s23111	: obad  	 0.432332
+
+T: ac1 : s23111	: s23111	 1.0
+O: ac1 : s23111	: ogood  	 0.68394
+O: ac1 : s23111	: obad  	 0.31606
+
+T: ac2 : s23111	: s23111	 1.0
+O: ac2 : s23111	: ogood  	 0.521165
+O: ac2 : s23111	: obad  	 0.478835
+
+T: as  : s23111	: st	 1.0
+O: as  : s23111	: ogood  	 1.0
+R: as  : s23111	: *	 : *	 -100.0
+
+T: amn : s30000	: s31000	 1.0
+O: amn : s30000	: ogood  	 1.0
+
+T: ame : s30000	: st	 1.0
+O: ame : s30000	: ogood  	 1.0
+R: ame : s30000	: *	 : *	 1.0
+
+T: ams : s30000	: st	 1.0
+O: ams : s30000	: ogood  	 1.0
+R: ams : s30000	: *	 : *	 -100.0
+
+T: amw : s30000	: s20000	 1.0
+O: amw : s30000	: ogood  	 1.0
+
+T: ac0 : s30000	: s30000	 1.0
+O: ac0 : s30000	: ogood  	 0.378442
+O: ac0 : s30000	: obad  	 0.621558
+
+T: ac1 : s30000	: s30000	 1.0
+O: ac1 : s30000	: ogood  	 0.486414
+O: ac1 : s30000	: obad  	 0.513586
+
+T: ac2 : s30000	: s30000	 1.0
+O: ac2 : s30000	: ogood  	 0.432332
+O: ac2 : s30000	: obad  	 0.567668
+
+T: as  : s30000	: st	 1.0
+O: as  : s30000	: ogood  	 1.0
+R: as  : s30000	: *	 : *	 -100.0
+
+T: amn : s30001	: s31001	 1.0
+O: amn : s30001	: ogood  	 1.0
+
+T: ame : s30001	: st	 1.0
+O: ame : s30001	: ogood  	 1.0
+R: ame : s30001	: *	 : *	 1.0
+
+T: ams : s30001	: st	 1.0
+O: ams : s30001	: ogood  	 1.0
+R: ams : s30001	: *	 : *	 -100.0
+
+T: amw : s30001	: s20001	 1.0
+O: amw : s30001	: ogood  	 1.0
+
+T: ac0 : s30001	: s30001	 1.0
+O: ac0 : s30001	: ogood  	 0.378442
+O: ac0 : s30001	: obad  	 0.621558
+
+T: ac1 : s30001	: s30001	 1.0
+O: ac1 : s30001	: ogood  	 0.486414
+O: ac1 : s30001	: obad  	 0.513586
+
+T: ac2 : s30001	: s30001	 1.0
+O: ac2 : s30001	: ogood  	 0.567668
+O: ac2 : s30001	: obad  	 0.432332
+
+T: as  : s30001	: st	 1.0
+O: as  : s30001	: ogood  	 1.0
+R: as  : s30001	: *	 : *	 -100.0
+
+T: amn : s30010	: s31010	 1.0
+O: amn : s30010	: ogood  	 1.0
+
+T: ame : s30010	: st	 1.0
+O: ame : s30010	: ogood  	 1.0
+R: ame : s30010	: *	 : *	 1.0
+
+T: ams : s30010	: st	 1.0
+O: ams : s30010	: ogood  	 1.0
+R: ams : s30010	: *	 : *	 -100.0
+
+T: amw : s30010	: s20010	 1.0
+O: amw : s30010	: ogood  	 1.0
+
+T: ac0 : s30010	: s30010	 1.0
+O: ac0 : s30010	: ogood  	 0.378442
+O: ac0 : s30010	: obad  	 0.621558
+
+T: ac1 : s30010	: s30010	 1.0
+O: ac1 : s30010	: ogood  	 0.513586
+O: ac1 : s30010	: obad  	 0.486414
+
+T: ac2 : s30010	: s30010	 1.0
+O: ac2 : s30010	: ogood  	 0.432332
+O: ac2 : s30010	: obad  	 0.567668
+
+T: as  : s30010	: st	 1.0
+O: as  : s30010	: ogood  	 1.0
+R: as  : s30010	: *	 : *	 -100.0
+
+T: amn : s30011	: s31011	 1.0
+O: amn : s30011	: ogood  	 1.0
+
+T: ame : s30011	: st	 1.0
+O: ame : s30011	: ogood  	 1.0
+R: ame : s30011	: *	 : *	 1.0
+
+T: ams : s30011	: st	 1.0
+O: ams : s30011	: ogood  	 1.0
+R: ams : s30011	: *	 : *	 -100.0
+
+T: amw : s30011	: s20011	 1.0
+O: amw : s30011	: ogood  	 1.0
+
+T: ac0 : s30011	: s30011	 1.0
+O: ac0 : s30011	: ogood  	 0.378442
+O: ac0 : s30011	: obad  	 0.621558
+
+T: ac1 : s30011	: s30011	 1.0
+O: ac1 : s30011	: ogood  	 0.513586
+O: ac1 : s30011	: obad  	 0.486414
+
+T: ac2 : s30011	: s30011	 1.0
+O: ac2 : s30011	: ogood  	 0.567668
+O: ac2 : s30011	: obad  	 0.432332
+
+T: as  : s30011	: st	 1.0
+O: as  : s30011	: ogood  	 1.0
+R: as  : s30011	: *	 : *	 -100.0
+
+T: amn : s30100	: s31100	 1.0
+O: amn : s30100	: ogood  	 1.0
+
+T: ame : s30100	: st	 1.0
+O: ame : s30100	: ogood  	 1.0
+R: ame : s30100	: *	 : *	 1.0
+
+T: ams : s30100	: st	 1.0
+O: ams : s30100	: ogood  	 1.0
+R: ams : s30100	: *	 : *	 -100.0
+
+T: amw : s30100	: s20100	 1.0
+O: amw : s30100	: ogood  	 1.0
+
+T: ac0 : s30100	: s30100	 1.0
+O: ac0 : s30100	: ogood  	 0.621558
+O: ac0 : s30100	: obad  	 0.378442
+
+T: ac1 : s30100	: s30100	 1.0
+O: ac1 : s30100	: ogood  	 0.486414
+O: ac1 : s30100	: obad  	 0.513586
+
+T: ac2 : s30100	: s30100	 1.0
+O: ac2 : s30100	: ogood  	 0.432332
+O: ac2 : s30100	: obad  	 0.567668
+
+T: as  : s30100	: st	 1.0
+O: as  : s30100	: ogood  	 1.0
+R: as  : s30100	: *	 : *	 -100.0
+
+T: amn : s30101	: s31101	 1.0
+O: amn : s30101	: ogood  	 1.0
+
+T: ame : s30101	: st	 1.0
+O: ame : s30101	: ogood  	 1.0
+R: ame : s30101	: *	 : *	 1.0
+
+T: ams : s30101	: st	 1.0
+O: ams : s30101	: ogood  	 1.0
+R: ams : s30101	: *	 : *	 -100.0
+
+T: amw : s30101	: s20101	 1.0
+O: amw : s30101	: ogood  	 1.0
+
+T: ac0 : s30101	: s30101	 1.0
+O: ac0 : s30101	: ogood  	 0.621558
+O: ac0 : s30101	: obad  	 0.378442
+
+T: ac1 : s30101	: s30101	 1.0
+O: ac1 : s30101	: ogood  	 0.486414
+O: ac1 : s30101	: obad  	 0.513586
+
+T: ac2 : s30101	: s30101	 1.0
+O: ac2 : s30101	: ogood  	 0.567668
+O: ac2 : s30101	: obad  	 0.432332
+
+T: as  : s30101	: st	 1.0
+O: as  : s30101	: ogood  	 1.0
+R: as  : s30101	: *	 : *	 -100.0
+
+T: amn : s30110	: s31110	 1.0
+O: amn : s30110	: ogood  	 1.0
+
+T: ame : s30110	: st	 1.0
+O: ame : s30110	: ogood  	 1.0
+R: ame : s30110	: *	 : *	 1.0
+
+T: ams : s30110	: st	 1.0
+O: ams : s30110	: ogood  	 1.0
+R: ams : s30110	: *	 : *	 -100.0
+
+T: amw : s30110	: s20110	 1.0
+O: amw : s30110	: ogood  	 1.0
+
+T: ac0 : s30110	: s30110	 1.0
+O: ac0 : s30110	: ogood  	 0.621558
+O: ac0 : s30110	: obad  	 0.378442
+
+T: ac1 : s30110	: s30110	 1.0
+O: ac1 : s30110	: ogood  	 0.513586
+O: ac1 : s30110	: obad  	 0.486414
+
+T: ac2 : s30110	: s30110	 1.0
+O: ac2 : s30110	: ogood  	 0.432332
+O: ac2 : s30110	: obad  	 0.567668
+
+T: as  : s30110	: st	 1.0
+O: as  : s30110	: ogood  	 1.0
+R: as  : s30110	: *	 : *	 -100.0
+
+T: amn : s30111	: s31111	 1.0
+O: amn : s30111	: ogood  	 1.0
+
+T: ame : s30111	: st	 1.0
+O: ame : s30111	: ogood  	 1.0
+R: ame : s30111	: *	 : *	 1.0
+
+T: ams : s30111	: st	 1.0
+O: ams : s30111	: ogood  	 1.0
+R: ams : s30111	: *	 : *	 -100.0
+
+T: amw : s30111	: s20111	 1.0
+O: amw : s30111	: ogood  	 1.0
+
+T: ac0 : s30111	: s30111	 1.0
+O: ac0 : s30111	: ogood  	 0.621558
+O: ac0 : s30111	: obad  	 0.378442
+
+T: ac1 : s30111	: s30111	 1.0
+O: ac1 : s30111	: ogood  	 0.513586
+O: ac1 : s30111	: obad  	 0.486414
+
+T: ac2 : s30111	: s30111	 1.0
+O: ac2 : s30111	: ogood  	 0.567668
+O: ac2 : s30111	: obad  	 0.432332
+
+T: as  : s30111	: st	 1.0
+O: as  : s30111	: ogood  	 1.0
+R: as  : s30111	: *	 : *	 -100.0
+
+T: amn : s31000	: s32000	 1.0
+O: amn : s31000	: ogood  	 1.0
+
+T: ame : s31000	: st	 1.0
+O: ame : s31000	: ogood  	 1.0
+R: ame : s31000	: *	 : *	 1.0
+
+T: ams : s31000	: s30000	 1.0
+O: ams : s31000	: ogood  	 1.0
+
+T: amw : s31000	: s21000	 1.0
+O: amw : s31000	: ogood  	 1.0
+
+T: ac0 : s31000	: s31000	 1.0
+O: ac0 : s31000	: ogood  	 0.31606
+O: ac0 : s31000	: obad  	 0.68394
+
+T: ac1 : s31000	: s31000	 1.0
+O: ac1 : s31000	: ogood  	 0.470447
+O: ac1 : s31000	: obad  	 0.529553
+
+T: ac2 : s31000	: s31000	 1.0
+O: ac2 : s31000	: ogood  	 0.446561
+O: ac2 : s31000	: obad  	 0.553439
+
+T: as  : s31000	: st	 1.0
+O: as  : s31000	: ogood  	 1.0
+R: as  : s31000	: *	 : *	 -100.0
+
+T: amn : s31001	: s32001	 1.0
+O: amn : s31001	: ogood  	 1.0
+
+T: ame : s31001	: st	 1.0
+O: ame : s31001	: ogood  	 1.0
+R: ame : s31001	: *	 : *	 1.0
+
+T: ams : s31001	: s30001	 1.0
+O: ams : s31001	: ogood  	 1.0
+
+T: amw : s31001	: s21001	 1.0
+O: amw : s31001	: ogood  	 1.0
+
+T: ac0 : s31001	: s31001	 1.0
+O: ac0 : s31001	: ogood  	 0.31606
+O: ac0 : s31001	: obad  	 0.68394
+
+T: ac1 : s31001	: s31001	 1.0
+O: ac1 : s31001	: ogood  	 0.470447
+O: ac1 : s31001	: obad  	 0.529553
+
+T: ac2 : s31001	: s31001	 1.0
+O: ac2 : s31001	: ogood  	 0.553439
+O: ac2 : s31001	: obad  	 0.446561
+
+T: as  : s31001	: st	 1.0
+O: as  : s31001	: ogood  	 1.0
+R: as  : s31001	: *	 : *	 -100.0
+
+T: amn : s31010	: s32010	 1.0
+O: amn : s31010	: ogood  	 1.0
+
+T: ame : s31010	: st	 1.0
+O: ame : s31010	: ogood  	 1.0
+R: ame : s31010	: *	 : *	 1.0
+
+T: ams : s31010	: s30010	 1.0
+O: ams : s31010	: ogood  	 1.0
+
+T: amw : s31010	: s21010	 1.0
+O: amw : s31010	: ogood  	 1.0
+
+T: ac0 : s31010	: s31010	 1.0
+O: ac0 : s31010	: ogood  	 0.31606
+O: ac0 : s31010	: obad  	 0.68394
+
+T: ac1 : s31010	: s31010	 1.0
+O: ac1 : s31010	: ogood  	 0.529553
+O: ac1 : s31010	: obad  	 0.470447
+
+T: ac2 : s31010	: s31010	 1.0
+O: ac2 : s31010	: ogood  	 0.446561
+O: ac2 : s31010	: obad  	 0.553439
+
+T: as  : s31010	: st	 1.0
+O: as  : s31010	: ogood  	 1.0
+R: as  : s31010	: *	 : *	 -100.0
+
+T: amn : s31011	: s32011	 1.0
+O: amn : s31011	: ogood  	 1.0
+
+T: ame : s31011	: st	 1.0
+O: ame : s31011	: ogood  	 1.0
+R: ame : s31011	: *	 : *	 1.0
+
+T: ams : s31011	: s30011	 1.0
+O: ams : s31011	: ogood  	 1.0
+
+T: amw : s31011	: s21011	 1.0
+O: amw : s31011	: ogood  	 1.0
+
+T: ac0 : s31011	: s31011	 1.0
+O: ac0 : s31011	: ogood  	 0.31606
+O: ac0 : s31011	: obad  	 0.68394
+
+T: ac1 : s31011	: s31011	 1.0
+O: ac1 : s31011	: ogood  	 0.529553
+O: ac1 : s31011	: obad  	 0.470447
+
+T: ac2 : s31011	: s31011	 1.0
+O: ac2 : s31011	: ogood  	 0.553439
+O: ac2 : s31011	: obad  	 0.446561
+
+T: as  : s31011	: st	 1.0
+O: as  : s31011	: ogood  	 1.0
+R: as  : s31011	: *	 : *	 -100.0
+
+T: amn : s31100	: s32100	 1.0
+O: amn : s31100	: ogood  	 1.0
+
+T: ame : s31100	: st	 1.0
+O: ame : s31100	: ogood  	 1.0
+R: ame : s31100	: *	 : *	 1.0
+
+T: ams : s31100	: s30100	 1.0
+O: ams : s31100	: ogood  	 1.0
+
+T: amw : s31100	: s21100	 1.0
+O: amw : s31100	: ogood  	 1.0
+
+T: ac0 : s31100	: s31100	 1.0
+O: ac0 : s31100	: ogood  	 0.68394
+O: ac0 : s31100	: obad  	 0.31606
+
+T: ac1 : s31100	: s31100	 1.0
+O: ac1 : s31100	: ogood  	 0.470447
+O: ac1 : s31100	: obad  	 0.529553
+
+T: ac2 : s31100	: s31100	 1.0
+O: ac2 : s31100	: ogood  	 0.446561
+O: ac2 : s31100	: obad  	 0.553439
+
+T: as  : s31100	: st	 1.0
+O: as  : s31100	: ogood  	 1.0
+R: as  : s31100	: *	 : *	 -100.0
+
+T: amn : s31101	: s32101	 1.0
+O: amn : s31101	: ogood  	 1.0
+
+T: ame : s31101	: st	 1.0
+O: ame : s31101	: ogood  	 1.0
+R: ame : s31101	: *	 : *	 1.0
+
+T: ams : s31101	: s30101	 1.0
+O: ams : s31101	: ogood  	 1.0
+
+T: amw : s31101	: s21101	 1.0
+O: amw : s31101	: ogood  	 1.0
+
+T: ac0 : s31101	: s31101	 1.0
+O: ac0 : s31101	: ogood  	 0.68394
+O: ac0 : s31101	: obad  	 0.31606
+
+T: ac1 : s31101	: s31101	 1.0
+O: ac1 : s31101	: ogood  	 0.470447
+O: ac1 : s31101	: obad  	 0.529553
+
+T: ac2 : s31101	: s31101	 1.0
+O: ac2 : s31101	: ogood  	 0.553439
+O: ac2 : s31101	: obad  	 0.446561
+
+T: as  : s31101	: st	 1.0
+O: as  : s31101	: ogood  	 1.0
+R: as  : s31101	: *	 : *	 -100.0
+
+T: amn : s31110	: s32110	 1.0
+O: amn : s31110	: ogood  	 1.0
+
+T: ame : s31110	: st	 1.0
+O: ame : s31110	: ogood  	 1.0
+R: ame : s31110	: *	 : *	 1.0
+
+T: ams : s31110	: s30110	 1.0
+O: ams : s31110	: ogood  	 1.0
+
+T: amw : s31110	: s21110	 1.0
+O: amw : s31110	: ogood  	 1.0
+
+T: ac0 : s31110	: s31110	 1.0
+O: ac0 : s31110	: ogood  	 0.68394
+O: ac0 : s31110	: obad  	 0.31606
+
+T: ac1 : s31110	: s31110	 1.0
+O: ac1 : s31110	: ogood  	 0.529553
+O: ac1 : s31110	: obad  	 0.470447
+
+T: ac2 : s31110	: s31110	 1.0
+O: ac2 : s31110	: ogood  	 0.446561
+O: ac2 : s31110	: obad  	 0.553439
+
+T: as  : s31110	: st	 1.0
+O: as  : s31110	: ogood  	 1.0
+R: as  : s31110	: *	 : *	 -100.0
+
+T: amn : s31111	: s32111	 1.0
+O: amn : s31111	: ogood  	 1.0
+
+T: ame : s31111	: st	 1.0
+O: ame : s31111	: ogood  	 1.0
+R: ame : s31111	: *	 : *	 1.0
+
+T: ams : s31111	: s30111	 1.0
+O: ams : s31111	: ogood  	 1.0
+
+T: amw : s31111	: s21111	 1.0
+O: amw : s31111	: ogood  	 1.0
+
+T: ac0 : s31111	: s31111	 1.0
+O: ac0 : s31111	: ogood  	 0.68394
+O: ac0 : s31111	: obad  	 0.31606
+
+T: ac1 : s31111	: s31111	 1.0
+O: ac1 : s31111	: ogood  	 0.529553
+O: ac1 : s31111	: obad  	 0.470447
+
+T: ac2 : s31111	: s31111	 1.0
+O: ac2 : s31111	: ogood  	 0.553439
+O: ac2 : s31111	: obad  	 0.446561
+
+T: as  : s31111	: st	 1.0
+O: as  : s31111	: ogood  	 1.0
+R: as  : s31111	: *	 : *	 -100.0
+
+T: amn : s32000	: s33000	 1.0
+O: amn : s32000	: ogood  	 1.0
+
+T: ame : s32000	: st	 1.0
+O: ame : s32000	: ogood  	 1.0
+R: ame : s32000	: *	 : *	 1.0
+
+T: ams : s32000	: s31000	 1.0
+O: ams : s32000	: ogood  	 1.0
+
+T: amw : s32000	: s22000	 1.0
+O: amw : s32000	: ogood  	 1.0
+
+T: ac0 : s32000	: s32000	 1.0
+O: ac0 : s32000	: ogood  	 0.378442
+O: ac0 : s32000	: obad  	 0.621558
+
+T: ac1 : s32000	: s32000	 1.0
+O: ac1 : s32000	: ogood  	 0.446561
+O: ac1 : s32000	: obad  	 0.553439
+
+T: ac2 : s32000	: s32000	 1.0
+O: ac2 : s32000	: ogood  	 0.470447
+O: ac2 : s32000	: obad  	 0.529553
+
+T: as  : s32000	: st	 1.0
+O: as  : s32000	: ogood  	 1.0
+R: as  : s32000	: *	 : *	 -100.0
+
+T: amn : s32001	: s33001	 1.0
+O: amn : s32001	: ogood  	 1.0
+
+T: ame : s32001	: st	 1.0
+O: ame : s32001	: ogood  	 1.0
+R: ame : s32001	: *	 : *	 1.0
+
+T: ams : s32001	: s31001	 1.0
+O: ams : s32001	: ogood  	 1.0
+
+T: amw : s32001	: s22001	 1.0
+O: amw : s32001	: ogood  	 1.0
+
+T: ac0 : s32001	: s32001	 1.0
+O: ac0 : s32001	: ogood  	 0.378442
+O: ac0 : s32001	: obad  	 0.621558
+
+T: ac1 : s32001	: s32001	 1.0
+O: ac1 : s32001	: ogood  	 0.446561
+O: ac1 : s32001	: obad  	 0.553439
+
+T: ac2 : s32001	: s32001	 1.0
+O: ac2 : s32001	: ogood  	 0.529553
+O: ac2 : s32001	: obad  	 0.470447
+
+T: as  : s32001	: st	 1.0
+O: as  : s32001	: ogood  	 1.0
+R: as  : s32001	: *	 : *	 -100.0
+
+T: amn : s32010	: s33010	 1.0
+O: amn : s32010	: ogood  	 1.0
+
+T: ame : s32010	: st	 1.0
+O: ame : s32010	: ogood  	 1.0
+R: ame : s32010	: *	 : *	 1.0
+
+T: ams : s32010	: s31010	 1.0
+O: ams : s32010	: ogood  	 1.0
+
+T: amw : s32010	: s22010	 1.0
+O: amw : s32010	: ogood  	 1.0
+
+T: ac0 : s32010	: s32010	 1.0
+O: ac0 : s32010	: ogood  	 0.378442
+O: ac0 : s32010	: obad  	 0.621558
+
+T: ac1 : s32010	: s32010	 1.0
+O: ac1 : s32010	: ogood  	 0.553439
+O: ac1 : s32010	: obad  	 0.446561
+
+T: ac2 : s32010	: s32010	 1.0
+O: ac2 : s32010	: ogood  	 0.470447
+O: ac2 : s32010	: obad  	 0.529553
+
+T: as  : s32010	: st	 1.0
+O: as  : s32010	: ogood  	 1.0
+R: as  : s32010	: *	 : *	 -100.0
+
+T: amn : s32011	: s33011	 1.0
+O: amn : s32011	: ogood  	 1.0
+
+T: ame : s32011	: st	 1.0
+O: ame : s32011	: ogood  	 1.0
+R: ame : s32011	: *	 : *	 1.0
+
+T: ams : s32011	: s31011	 1.0
+O: ams : s32011	: ogood  	 1.0
+
+T: amw : s32011	: s22011	 1.0
+O: amw : s32011	: ogood  	 1.0
+
+T: ac0 : s32011	: s32011	 1.0
+O: ac0 : s32011	: ogood  	 0.378442
+O: ac0 : s32011	: obad  	 0.621558
+
+T: ac1 : s32011	: s32011	 1.0
+O: ac1 : s32011	: ogood  	 0.553439
+O: ac1 : s32011	: obad  	 0.446561
+
+T: ac2 : s32011	: s32011	 1.0
+O: ac2 : s32011	: ogood  	 0.529553
+O: ac2 : s32011	: obad  	 0.470447
+
+T: as  : s32011	: st	 1.0
+O: as  : s32011	: ogood  	 1.0
+R: as  : s32011	: *	 : *	 -100.0
+
+T: amn : s32100	: s33100	 1.0
+O: amn : s32100	: ogood  	 1.0
+
+T: ame : s32100	: st	 1.0
+O: ame : s32100	: ogood  	 1.0
+R: ame : s32100	: *	 : *	 1.0
+
+T: ams : s32100	: s31100	 1.0
+O: ams : s32100	: ogood  	 1.0
+
+T: amw : s32100	: s22100	 1.0
+O: amw : s32100	: ogood  	 1.0
+
+T: ac0 : s32100	: s32100	 1.0
+O: ac0 : s32100	: ogood  	 0.621558
+O: ac0 : s32100	: obad  	 0.378442
+
+T: ac1 : s32100	: s32100	 1.0
+O: ac1 : s32100	: ogood  	 0.446561
+O: ac1 : s32100	: obad  	 0.553439
+
+T: ac2 : s32100	: s32100	 1.0
+O: ac2 : s32100	: ogood  	 0.470447
+O: ac2 : s32100	: obad  	 0.529553
+
+T: as  : s32100	: st	 1.0
+O: as  : s32100	: ogood  	 1.0
+R: as  : s32100	: *	 : *	 -100.0
+
+T: amn : s32101	: s33101	 1.0
+O: amn : s32101	: ogood  	 1.0
+
+T: ame : s32101	: st	 1.0
+O: ame : s32101	: ogood  	 1.0
+R: ame : s32101	: *	 : *	 1.0
+
+T: ams : s32101	: s31101	 1.0
+O: ams : s32101	: ogood  	 1.0
+
+T: amw : s32101	: s22101	 1.0
+O: amw : s32101	: ogood  	 1.0
+
+T: ac0 : s32101	: s32101	 1.0
+O: ac0 : s32101	: ogood  	 0.621558
+O: ac0 : s32101	: obad  	 0.378442
+
+T: ac1 : s32101	: s32101	 1.0
+O: ac1 : s32101	: ogood  	 0.446561
+O: ac1 : s32101	: obad  	 0.553439
+
+T: ac2 : s32101	: s32101	 1.0
+O: ac2 : s32101	: ogood  	 0.529553
+O: ac2 : s32101	: obad  	 0.470447
+
+T: as  : s32101	: st	 1.0
+O: as  : s32101	: ogood  	 1.0
+R: as  : s32101	: *	 : *	 -100.0
+
+T: amn : s32110	: s33110	 1.0
+O: amn : s32110	: ogood  	 1.0
+
+T: ame : s32110	: st	 1.0
+O: ame : s32110	: ogood  	 1.0
+R: ame : s32110	: *	 : *	 1.0
+
+T: ams : s32110	: s31110	 1.0
+O: ams : s32110	: ogood  	 1.0
+
+T: amw : s32110	: s22110	 1.0
+O: amw : s32110	: ogood  	 1.0
+
+T: ac0 : s32110	: s32110	 1.0
+O: ac0 : s32110	: ogood  	 0.621558
+O: ac0 : s32110	: obad  	 0.378442
+
+T: ac1 : s32110	: s32110	 1.0
+O: ac1 : s32110	: ogood  	 0.553439
+O: ac1 : s32110	: obad  	 0.446561
+
+T: ac2 : s32110	: s32110	 1.0
+O: ac2 : s32110	: ogood  	 0.470447
+O: ac2 : s32110	: obad  	 0.529553
+
+T: as  : s32110	: st	 1.0
+O: as  : s32110	: ogood  	 1.0
+R: as  : s32110	: *	 : *	 -100.0
+
+T: amn : s32111	: s33111	 1.0
+O: amn : s32111	: ogood  	 1.0
+
+T: ame : s32111	: st	 1.0
+O: ame : s32111	: ogood  	 1.0
+R: ame : s32111	: *	 : *	 1.0
+
+T: ams : s32111	: s31111	 1.0
+O: ams : s32111	: ogood  	 1.0
+
+T: amw : s32111	: s22111	 1.0
+O: amw : s32111	: ogood  	 1.0
+
+T: ac0 : s32111	: s32111	 1.0
+O: ac0 : s32111	: ogood  	 0.621558
+O: ac0 : s32111	: obad  	 0.378442
+
+T: ac1 : s32111	: s32111	 1.0
+O: ac1 : s32111	: ogood  	 0.553439
+O: ac1 : s32111	: obad  	 0.446561
+
+T: ac2 : s32111	: s32111	 1.0
+O: ac2 : s32111	: ogood  	 0.529553
+O: ac2 : s32111	: obad  	 0.470447
+
+T: as  : s32111	: st	 1.0
+O: as  : s32111	: ogood  	 1.0
+R: as  : s32111	: *	 : *	 -100.0
+
+T: amn : s33000	: st	 1.0
+O: amn : s33000	: ogood  	 1.0
+R: amn : s33000	: *	 : *	 -100.0
+
+T: ame : s33000	: st	 1.0
+O: ame : s33000	: ogood  	 1.0
+R: ame : s33000	: *	 : *	 1.0
+
+T: ams : s33000	: s32000	 1.0
+O: ams : s33000	: ogood  	 1.0
+
+T: amw : s33000	: s23000	 1.0
+O: amw : s33000	: ogood  	 1.0
+
+T: ac0 : s33000	: s33000	 1.0
+O: ac0 : s33000	: ogood  	 0.446561
+O: ac0 : s33000	: obad  	 0.553439
+
+T: ac1 : s33000	: s33000	 1.0
+O: ac1 : s33000	: ogood  	 0.432332
+O: ac1 : s33000	: obad  	 0.567668
+
+T: ac2 : s33000	: s33000	 1.0
+O: ac2 : s33000	: ogood  	 0.486414
+O: ac2 : s33000	: obad  	 0.513586
+
+T: as  : s33000	: st	 1.0
+O: as  : s33000	: ogood  	 1.0
+R: as  : s33000	: *	 : *	 -100.0
+
+T: amn : s33001	: st	 1.0
+O: amn : s33001	: ogood  	 1.0
+R: amn : s33001	: *	 : *	 -100.0
+
+T: ame : s33001	: st	 1.0
+O: ame : s33001	: ogood  	 1.0
+R: ame : s33001	: *	 : *	 1.0
+
+T: ams : s33001	: s32001	 1.0
+O: ams : s33001	: ogood  	 1.0
+
+T: amw : s33001	: s23001	 1.0
+O: amw : s33001	: ogood  	 1.0
+
+T: ac0 : s33001	: s33001	 1.0
+O: ac0 : s33001	: ogood  	 0.446561
+O: ac0 : s33001	: obad  	 0.553439
+
+T: ac1 : s33001	: s33001	 1.0
+O: ac1 : s33001	: ogood  	 0.432332
+O: ac1 : s33001	: obad  	 0.567668
+
+T: ac2 : s33001	: s33001	 1.0
+O: ac2 : s33001	: ogood  	 0.513586
+O: ac2 : s33001	: obad  	 0.486414
+
+T: as  : s33001	: st	 1.0
+O: as  : s33001	: ogood  	 1.0
+R: as  : s33001	: *	 : *	 -100.0
+
+T: amn : s33010	: st	 1.0
+O: amn : s33010	: ogood  	 1.0
+R: amn : s33010	: *	 : *	 -100.0
+
+T: ame : s33010	: st	 1.0
+O: ame : s33010	: ogood  	 1.0
+R: ame : s33010	: *	 : *	 1.0
+
+T: ams : s33010	: s32010	 1.0
+O: ams : s33010	: ogood  	 1.0
+
+T: amw : s33010	: s23010	 1.0
+O: amw : s33010	: ogood  	 1.0
+
+T: ac0 : s33010	: s33010	 1.0
+O: ac0 : s33010	: ogood  	 0.446561
+O: ac0 : s33010	: obad  	 0.553439
+
+T: ac1 : s33010	: s33010	 1.0
+O: ac1 : s33010	: ogood  	 0.567668
+O: ac1 : s33010	: obad  	 0.432332
+
+T: ac2 : s33010	: s33010	 1.0
+O: ac2 : s33010	: ogood  	 0.486414
+O: ac2 : s33010	: obad  	 0.513586
+
+T: as  : s33010	: st	 1.0
+O: as  : s33010	: ogood  	 1.0
+R: as  : s33010	: *	 : *	 -100.0
+
+T: amn : s33011	: st	 1.0
+O: amn : s33011	: ogood  	 1.0
+R: amn : s33011	: *	 : *	 -100.0
+
+T: ame : s33011	: st	 1.0
+O: ame : s33011	: ogood  	 1.0
+R: ame : s33011	: *	 : *	 1.0
+
+T: ams : s33011	: s32011	 1.0
+O: ams : s33011	: ogood  	 1.0
+
+T: amw : s33011	: s23011	 1.0
+O: amw : s33011	: ogood  	 1.0
+
+T: ac0 : s33011	: s33011	 1.0
+O: ac0 : s33011	: ogood  	 0.446561
+O: ac0 : s33011	: obad  	 0.553439
+
+T: ac1 : s33011	: s33011	 1.0
+O: ac1 : s33011	: ogood  	 0.567668
+O: ac1 : s33011	: obad  	 0.432332
+
+T: ac2 : s33011	: s33011	 1.0
+O: ac2 : s33011	: ogood  	 0.513586
+O: ac2 : s33011	: obad  	 0.486414
+
+T: as  : s33011	: st	 1.0
+O: as  : s33011	: ogood  	 1.0
+R: as  : s33011	: *	 : *	 -100.0
+
+T: amn : s33100	: st	 1.0
+O: amn : s33100	: ogood  	 1.0
+R: amn : s33100	: *	 : *	 -100.0
+
+T: ame : s33100	: st	 1.0
+O: ame : s33100	: ogood  	 1.0
+R: ame : s33100	: *	 : *	 1.0
+
+T: ams : s33100	: s32100	 1.0
+O: ams : s33100	: ogood  	 1.0
+
+T: amw : s33100	: s23100	 1.0
+O: amw : s33100	: ogood  	 1.0
+
+T: ac0 : s33100	: s33100	 1.0
+O: ac0 : s33100	: ogood  	 0.553439
+O: ac0 : s33100	: obad  	 0.446561
+
+T: ac1 : s33100	: s33100	 1.0
+O: ac1 : s33100	: ogood  	 0.432332
+O: ac1 : s33100	: obad  	 0.567668
+
+T: ac2 : s33100	: s33100	 1.0
+O: ac2 : s33100	: ogood  	 0.486414
+O: ac2 : s33100	: obad  	 0.513586
+
+T: as  : s33100	: st	 1.0
+O: as  : s33100	: ogood  	 1.0
+R: as  : s33100	: *	 : *	 -100.0
+
+T: amn : s33101	: st	 1.0
+O: amn : s33101	: ogood  	 1.0
+R: amn : s33101	: *	 : *	 -100.0
+
+T: ame : s33101	: st	 1.0
+O: ame : s33101	: ogood  	 1.0
+R: ame : s33101	: *	 : *	 1.0
+
+T: ams : s33101	: s32101	 1.0
+O: ams : s33101	: ogood  	 1.0
+
+T: amw : s33101	: s23101	 1.0
+O: amw : s33101	: ogood  	 1.0
+
+T: ac0 : s33101	: s33101	 1.0
+O: ac0 : s33101	: ogood  	 0.553439
+O: ac0 : s33101	: obad  	 0.446561
+
+T: ac1 : s33101	: s33101	 1.0
+O: ac1 : s33101	: ogood  	 0.432332
+O: ac1 : s33101	: obad  	 0.567668
+
+T: ac2 : s33101	: s33101	 1.0
+O: ac2 : s33101	: ogood  	 0.513586
+O: ac2 : s33101	: obad  	 0.486414
+
+T: as  : s33101	: st	 1.0
+O: as  : s33101	: ogood  	 1.0
+R: as  : s33101	: *	 : *	 -100.0
+
+T: amn : s33110	: st	 1.0
+O: amn : s33110	: ogood  	 1.0
+R: amn : s33110	: *	 : *	 -100.0
+
+T: ame : s33110	: st	 1.0
+O: ame : s33110	: ogood  	 1.0
+R: ame : s33110	: *	 : *	 1.0
+
+T: ams : s33110	: s32110	 1.0
+O: ams : s33110	: ogood  	 1.0
+
+T: amw : s33110	: s23110	 1.0
+O: amw : s33110	: ogood  	 1.0
+
+T: ac0 : s33110	: s33110	 1.0
+O: ac0 : s33110	: ogood  	 0.553439
+O: ac0 : s33110	: obad  	 0.446561
+
+T: ac1 : s33110	: s33110	 1.0
+O: ac1 : s33110	: ogood  	 0.567668
+O: ac1 : s33110	: obad  	 0.432332
+
+T: ac2 : s33110	: s33110	 1.0
+O: ac2 : s33110	: ogood  	 0.486414
+O: ac2 : s33110	: obad  	 0.513586
+
+T: as  : s33110	: st	 1.0
+O: as  : s33110	: ogood  	 1.0
+R: as  : s33110	: *	 : *	 -100.0
+
+T: amn : s33111	: st	 1.0
+O: amn : s33111	: ogood  	 1.0
+R: amn : s33111	: *	 : *	 -100.0
+
+T: ame : s33111	: st	 1.0
+O: ame : s33111	: ogood  	 1.0
+R: ame : s33111	: *	 : *	 1.0
+
+T: ams : s33111	: s32111	 1.0
+O: ams : s33111	: ogood  	 1.0
+
+T: amw : s33111	: s23111	 1.0
+O: amw : s33111	: ogood  	 1.0
+
+T: ac0 : s33111	: s33111	 1.0
+O: ac0 : s33111	: ogood  	 0.553439
+O: ac0 : s33111	: obad  	 0.446561
+
+T: ac1 : s33111	: s33111	 1.0
+O: ac1 : s33111	: ogood  	 0.567668
+O: ac1 : s33111	: obad  	 0.432332
+
+T: ac2 : s33111	: s33111	 1.0
+O: ac2 : s33111	: ogood  	 0.513586
+O: ac2 : s33111	: obad  	 0.486414
+
+T: as  : s33111	: st	 1.0
+O: as  : s33111	: ogood  	 1.0
+R: as  : s33111	: *	 : *	 -100.0
+
+T: amn : st	: s02000	 0.125
+T: amn : st	: s02001	 0.125
+T: amn : st	: s02010	 0.125
+T: amn : st	: s02011	 0.125
+T: amn : st	: s02100	 0.125
+T: amn : st	: s02101	 0.125
+T: amn : st	: s02110	 0.125
+T: amn : st	: s02111	 0.125
+O: amn : st	: ogood  	 1.0
+
+T: ame : st	: s02000	 0.125
+T: ame : st	: s02001	 0.125
+T: ame : st	: s02010	 0.125
+T: ame : st	: s02011	 0.125
+T: ame : st	: s02100	 0.125
+T: ame : st	: s02101	 0.125
+T: ame : st	: s02110	 0.125
+T: ame : st	: s02111	 0.125
+O: ame : st	: ogood  	 1.0
+
+T: ams : st	: s02000	 0.125
+T: ams : st	: s02001	 0.125
+T: ams : st	: s02010	 0.125
+T: ams : st	: s02011	 0.125
+T: ams : st	: s02100	 0.125
+T: ams : st	: s02101	 0.125
+T: ams : st	: s02110	 0.125
+T: ams : st	: s02111	 0.125
+O: ams : st	: ogood  	 1.0
+
+T: amw : st	: s02000	 0.125
+T: amw : st	: s02001	 0.125
+T: amw : st	: s02010	 0.125
+T: amw : st	: s02011	 0.125
+T: amw : st	: s02100	 0.125
+T: amw : st	: s02101	 0.125
+T: amw : st	: s02110	 0.125
+T: amw : st	: s02111	 0.125
+O: amw : st	: ogood  	 1.0
+
+T: ac0 : st	: s02000	 0.125
+T: ac0 : st	: s02001	 0.125
+T: ac0 : st	: s02010	 0.125
+T: ac0 : st	: s02011	 0.125
+T: ac0 : st	: s02100	 0.125
+T: ac0 : st	: s02101	 0.125
+T: ac0 : st	: s02110	 0.125
+T: ac0 : st	: s02111	 0.125
+O: ac0 : st	: ogood  	 1.0
+
+T: ac1 : st	: s02000	 0.125
+T: ac1 : st	: s02001	 0.125
+T: ac1 : st	: s02010	 0.125
+T: ac1 : st	: s02011	 0.125
+T: ac1 : st	: s02100	 0.125
+T: ac1 : st	: s02101	 0.125
+T: ac1 : st	: s02110	 0.125
+T: ac1 : st	: s02111	 0.125
+O: ac1 : st	: ogood  	 1.0
+
+T: ac2 : st	: s02000	 0.125
+T: ac2 : st	: s02001	 0.125
+T: ac2 : st	: s02010	 0.125
+T: ac2 : st	: s02011	 0.125
+T: ac2 : st	: s02100	 0.125
+T: ac2 : st	: s02101	 0.125
+T: ac2 : st	: s02110	 0.125
+T: ac2 : st	: s02111	 0.125
+O: ac2 : st	: ogood  	 1.0
+
+T: as  : st	: s02000	 0.125
+T: as  : st	: s02001	 0.125
+T: as  : st	: s02010	 0.125
+T: as  : st	: s02011	 0.125
+T: as  : st	: s02100	 0.125
+T: as  : st	: s02101	 0.125
+T: as  : st	: s02110	 0.125
+T: as  : st	: s02111	 0.125
+O: as  : st	: ogood  	 1.0
+
+

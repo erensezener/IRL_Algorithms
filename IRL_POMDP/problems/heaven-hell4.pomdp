@@ -1,0 +1,159 @@
+# A robot will be rewarded +1 for attaining heaven in one 
+# if it accidently reaches hell it will get -1
+# Problem is attributed to Sebastian Thrun but first appeared in Geffner
+# & Bonet: Solving Large POMDPs using Real Time DP 1998.
+# A priest is available to tell it where heaven is (left or right)
+#                   
+#        Heaven  4  3  2  5  6  Hell 
+#                      1
+#                      0
+#                      7  8  9 Priest
+#
+#          Hell 14 13 12 15 16  Heaven
+#                     11
+#                     10
+#                     17 18 19 Priest
+#
+# Furthermore, the map observations may be noisy. Edit the file to change
+# the level of noise. 
+# Heaven is obtained by moving W in state 4 or E in 16 and hell is 
+# obtained by moving E in 6 and W in 14. The priest is in 9
+# The agent starts at 0
+
+discount: 0.95
+values: reward
+states: 20
+actions: N S E W
+observations: ns ew ews ne left right
+
+#      0   1  2  3  4  5  6  7  8  9 10  11 12 13 14 15 16 17 18 19
+start: 0.5 0  0  0  0  0  0  0  0  0 0.5 0  0  0  0  0  0  0  0  0
+
+# heaven is left
+T : N : 0 : 1 1.0
+T : E : 0 : 0 1.0
+T : W : 0 : 0 1.0
+T : S : 0 : 7 1.0
+
+T : N : 1 : 2 1.0
+T : E : 1 : 1 1.0
+T : W : 1 : 1 1.0
+T : S : 1 : 0 1.0
+
+T : N : 2 : 2 1.0
+T : E : 2 : 5 1.0
+T : W : 2 : 3 1.0
+T : S : 2 : 1 1.0
+
+T : N : 3 : 3 1.0
+T : E : 3 : 2 1.0
+T : W : 3 : 4 1.0
+T : S : 3 : 3 1.0
+
+# heaven
+T : * : 4 :  0 0.5
+T : * : 4 : 10 0.5
+
+T : N : 5 : 5 1.0
+T : E : 5 : 6 1.0
+T : W : 5 : 2 1.0
+T : S : 5 : 5 1.0
+
+# hell
+T : * : 6 :  0 0.5
+T : * : 6 : 10 0.5
+
+T : N : 7 : 0 1.0
+T : E : 7 : 8 1.0
+T : W : 7 : 7 1.0
+T : S : 7 : 7 1.0
+
+T : N : 8 : 8 1.0
+T : W : 8 : 7 1.0
+T : E : 8 : 9 1.0
+T : S : 8 : 8 1.0
+
+T : N : 9 : 9 1.0
+T : W : 9 : 8 1.0
+T : E : 9 : 9 1.0
+T : S : 9 : 9 1.0
+
+# heaven is right
+T : N : 10 : 11 1.0
+T : E : 10 : 10 1.0
+T : W : 10 : 10 1.0
+T : S : 10 : 17 1.0
+
+T : N : 11 : 12 1.0
+T : E : 11 : 11 1.0
+T : W : 11 : 11 1.0
+T : S : 11 : 10 1.0
+
+T : N : 12 : 12 1.0
+T : E : 12 : 15 1.0
+T : W : 12 : 13 1.0
+T : S : 12 : 11 1.0
+
+T : N : 13 : 13 1.0
+T : E : 13 : 12 1.0
+T : W : 13 : 14 1.0
+T : S : 13 : 13 1.0
+
+# heaven
+T : * : 14 :  0 0.5
+T : * : 14 : 10 0.5
+
+T : N : 15 : 15 1.0
+T : E : 15 : 16 1.0
+T : W : 15 : 12 1.0
+T : S : 15 : 15 1.0
+
+# hell
+T : * : 16 : 0 0.5
+T : * : 16 : 10 0.5
+
+T : N : 17 : 10 1.0
+T : E : 17 : 18 1.0
+T : W : 17 : 17 1.0
+T : S : 17 : 17 1.0
+
+T : N : 18 : 18 1.0
+T : W : 18 : 17 1.0
+T : E : 18 : 19 1.0
+T : S : 18 : 18 1.0
+
+T : N : 19 : 19 1.0
+T : W : 19 : 18 1.0
+T : E : 19 : 19 1.0
+T : S : 19 : 19 1.0
+
+# heaven is left
+O : * : 0 : ns 1.0
+O : * : 1 : ns 1.0
+O : * : 2 : ews 1.0
+O : * : 3 : ew 1.0
+O : * : 4 : ew 1.0
+O : * : 5 : ew 1.0
+O : * : 6 : ew 1.0
+O : * : 7 : ne 1.0
+O : * : 8 : ew 1.0
+O : * : 9 : left 0.9
+O : * : 9 : right 0.1
+
+# hell is right
+O : * : 10 : ns 1.0
+O : * : 11 : ns 1.0
+O : * : 12 : ews 1.0
+O : * : 13 : ew 1.0
+O : * : 14 : ew 1.0
+O : * : 15 : ew 1.0
+O : * : 16 : ew 1.0
+O : * : 17 : ne 1.0
+O : * : 18 : ew 1.0
+O : * : 19 : left 0.1
+O : * : 19 : right 0.9
+
+R : * : 4 : * : * 1.0
+R : * : 14 : * : * -1.0
+R : * : 6 : * : * -1.0
+R : * : 16 : * : * 1.0

@@ -1,0 +1,12 @@
+drwxr-xr-x   3 backup   root        16384 Nov 21 03:22 .
+drwxr-xr-x   8 backup   root        16384 Nov 21 03:22 ..
+-rw-r--r--   1 backup   root          674 Nov 21 03:22 Contents.m
+-rw-r--r--   1 backup   root          819 Nov 21 03:22 ex_5_1.m
+-rw-r--r--   1 backup   root         1945 Nov 21 03:22 ex_5_19.m
+-rw-r--r--   1 backup   root         1078 Nov 21 03:22 ex_5_33.m
+-rw-r--r--   1 backup   root         1357 Nov 21 03:22 ex_5_39.m
+drwxr-xr-x   2 backup   root        16384 Nov 21 03:22 html
+-rw-r--r--   1 backup   root         1243 Nov 21 03:22 matrix_games.m
+-rw-r--r--   1 backup   root         1459 Nov 21 03:22 matrix_games_LP.m
+-rw-r--r--   1 backup   root         2144 Nov 21 03:22 norm_approx.m
+-rw-r--r--   1 backup   root         1311 Nov 21 03:22 qcqp.m

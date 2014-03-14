@@ -1,0 +1,9 @@
+drwxr-xr-x   2 backup   root        16384 Nov 21 03:20 .
+drwxr-xr-x   8 backup   root        16384 Nov 21 03:20 ..
+-rw-r--r--   1 backup   root          683 Nov 21 03:20 bm1.diary
+-rw-r--r--   1 backup   root        58776 Nov 21 03:20 copo14.mat
+-rw-r--r--   1 backup   root       580808 Nov 21 03:20 filter48_socp.mat
+-rw-r--r--   1 backup   root       161416 Nov 21 03:20 hamming_7_5_6.mat
+-rw-r--r--   1 backup   root         7192 Nov 21 03:20 minphase.mat
+-rw-r--r--   1 backup   root       478832 Nov 21 03:20 nql30.mat
+-rw-r--r--   1 backup   root       488680 Nov 21 03:20 sched_50_50_scaled.mat
